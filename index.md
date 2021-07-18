@@ -3,7 +3,8 @@ layout: about
 ---
 
 # About Me
-Hello! My name is Yuta Akiya and I am a computer engineering graduate seeking opportunities in the field of data.
+Hello! My name is Yuta Akiya and I am a computer engineering graduate seeking opportunities in the data science and analytics. 
+On this personal website, I showcase my accomplishments and skills as well as projects that helped improve my skills. I hope you enjoy!
 
 <br/>
 # Education
