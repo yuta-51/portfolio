@@ -1,11 +1,11 @@
 # Site settings
-title: A.P
+title: Yuta Akiya
 
 # Author
 author:
-  name: KyeongSeob Sim
+  name: Yuta Akiya
   desc: Hello nice to meet you
-  email: ksub0912@gmail.com
+  email: yutaakiya51(at)gmail(dot)com
   selfie: assets/img/profile.jpg
 
 # social
@@ -14,13 +14,13 @@ social:
   behance:
   bitbucket:
   dribbble:
-  facebook: Test
+  facebook: 
   flickr:
-  github: kssim
+  github: yutaa51
   google_plus:
   instagram:
   keybase:
-  linkedin: https://www.linkedin.com/in/kssim/ 
+  linkedin: https://www.linkedin.com/in/yuta-akiya-00596a203/
   pinterest:
   reddit:
   soundcloud:
