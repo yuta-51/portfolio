@@ -3,22 +3,33 @@ layout: about
 ---
 
 # About Me
-There is no specific format here. You can fill out the form you want.  
-For example, you might want to write a brief introduction about your self, experience, interests, publications, and other information.  
-I wrote "about me", "career", and "interests" on this page as an example.  
+Hello! My name is Yuta Akiya and I am a computer engineering graduate looking for a job in the field of data.  
+I've 
+<br/>
+
+# Education
+* California Polytechnic University, Pomona
+  * B.S Computer Engineering 
+  * 3.66 / 4.0 GPA
+* Google Professional Data Analytics Certificate
+  * 98+% Overall Grade
 
 <br/>
 
-# Career
-* Second Company (2012/01 ~ )
-  * Web Application Firewall
-* First Company (2011/01 ~ 2011/12)
-  * VPN Development Company
-  * Team Leader of VPN Development Div.
+# Skills
+* **Python**
+  * Data: Numpy, Pandas, Matplotlib
+  * ML: Scikitlearn, Keras
+  * Web: Beautiful Soup, Requests
+  * Graphics: Pygame
+* **SQL**
+  * Intermediate to Advanced DDL and DML
+* **Spreadsheets**
+  * Excel, Google Sheets
 
 <br/>
 
 # Hobbies
 * PC Gaming
- * Overwatch, Valorant, Apex Legends
+  * Overwatch, Valorant, Apex Legends
 * Piano
