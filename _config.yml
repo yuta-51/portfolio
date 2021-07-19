@@ -5,12 +5,12 @@ title: Yuta Akiya
 author:
   name: Yuta Akiya
   desc: Aspiring Data Analyst
-  email: yutaakiya51(at)gmail(dot)com
+  email: 
   selfie: assets/img/profile.jpg
 
 # social
 social:
-  email: true
+  email: false
   behance:
   bitbucket:
   dribbble:
@@ -28,7 +28,7 @@ social:
   steam:
   tumblr:
   gitlab:
-  twitter: Test
+  twitter:
   vimeo:
   wordpress:
   youtube:
