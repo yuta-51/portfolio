@@ -36,3 +36,7 @@ I was born in Okazaki, Japan and moved to California when I was 3 years old. I r
 
 **Spreadsheets** - 2 years
 > Excel, Google Sheets
+
+
+# Contact Me 
+> yutaakiya51(at)gmail(dot)com  
