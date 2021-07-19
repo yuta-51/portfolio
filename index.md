@@ -16,7 +16,7 @@ On this personal website, I showcase my accomplishments and skills as well as pr
 
 
 **Google Professional Data Analytics**
-> 98% Overall Grade
+> 98% Overall Grade  
 > Covered and Practiced Data Cleaning, Analysis, and Visualization
 
 # Core Skills  
