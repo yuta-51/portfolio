@@ -21,16 +21,16 @@ On this personal website, I showcase my accomplishments and skills as well as pr
 
 # Core Skills  
 ---
-**Python**
+**Python** - 3 years
 > Data: Numpy, Pandas, Matplotlib  
 > ML: Scikitlearn, Keras  
 > Web: Beautiful Soup, Requests, Flask  
 > Graphics: Pygame
 
 
-**SQL**  
+**SQL**  - 2 years
 > Intermediate to Advanced DDL and DML
 
 
-**Spreadsheets**
+**Spreadsheets** - 2 years
 > Excel, Google Sheets
