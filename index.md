@@ -11,8 +11,8 @@ On this personal website, I showcase my accomplishments and skills as well as pr
 # Education
 ---
 **California Polytechnic University, Pomona**
-> B.S Computer Engineering
-> 3.66 / 4.0 GPA
+> B.S Computer Engineering  
+> 3.66 / 4.0 GPA  
 
 
 **Google Professional Data Analytics**
@@ -22,9 +22,9 @@ On this personal website, I showcase my accomplishments and skills as well as pr
 # Core Skills  
 ---
 **Python**
-> Data: Numpy, Pandas, Matplotlib
-> ML: Scikitlearn, Keras
-> Web: Beautiful Soup, Requests, Flask
+> Data: Numpy, Pandas, Matplotlib  
+> ML: Scikitlearn, Keras  
+> Web: Beautiful Soup, Requests, Flask  
 > Graphics: Pygame
 
 
