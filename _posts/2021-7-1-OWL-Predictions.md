@@ -52,7 +52,7 @@ The player data contains individual players' performance in each round of each m
 
 
 
-## Step 3: Data Exploration/Manipulation
+## Step 3: Data Preparation
 So, what exactly does our data need to look like in order for it to be usable by our predictive model? We the match id, the two teams in the match, which team won the match, and the players' performance stats in a pandas dataframe. Although we won't be using the match id or team names for training, it will be included to validate the data.  
 One of the trickiest parts of this project is how to organize this data into our desired, wide-format data. The first step is to create a list that will serve as the column names for our future dataframe.
 
@@ -147,15 +147,26 @@ def find_avg_stats_diff(match_id, team_1, team_2, yr):
 Now we have the functions & queries necessary to completely fill in our dataframe which will become our training and testing data. 
 
 ## Step 3: Data Exploration
+At this point, we have our dataframe ready with our desired data: The difference between the teams' average stats and who won the match. However, the dataframe has 40 columns, and we can try and reduce this amount using data exploration and finding the features that will be most useful in our model and focusing on those. Here, we use a heatmap to show which features are most correlated with the outcome of the match (w/l) based on pearson correlation values. We only show correlations for features that have a pearson correlation value of 0.7 or higher. 
+
+
+```python
+corr = df.corr()
+best_corr = corr[abs(corr)>=.7]
+plt.figure(figsize=(12,8))
+sns.heatmap(best_corr, cmap="Blues")
+```
+
+
+<img src="https://i.imgur.com/qJ2HLUy.jpg" alt="heatmap"
+	title="corr-heatmap" height="500" />
 
 
 
 
 
 
-
-
-
+## Step 4: Model Building
 
 
 <img src="https://i.imgur.com/XjwCwAh.jpg" alt="split"
