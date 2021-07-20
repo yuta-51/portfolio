@@ -22,15 +22,11 @@ the e-sports league for professional Overwatch players.
     - Confusion Matrix
     - Heatmaps  
  
- 
- 
- # Procedure
- 
- ## Step 1: Gathering Data
- The match and player data is available [here](https://overwatchleague.com/en-us/statslab) for free thanks to the Overwatch League (OWL).  
- The data is structured like this:  
- 
- 
+# Procedure  
+## Step 1: Gathering Data
+The match and player data is available [here](https://overwatchleague.com/en-us/statslab) for free thanks to the Overwatch League (OWL).  
+The data is structured like this:  
+
 | match_data                                    |   player_data                     |                                
 | ---                                           |   ---                             |   
 | round_start: timestamp                        |   start_time: timestamp           |           
