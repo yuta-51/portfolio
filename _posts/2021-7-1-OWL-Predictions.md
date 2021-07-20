@@ -25,8 +25,8 @@ the e-sports league for professional Overwatch players.
  # Procedure
  
  ## Step 1: Gathering Data
- The match and player data is available [here](https://overwatchleague.com/en-us/statslab) for free thanks to the Overwatch League. 
- The data is structure like this:
+ The match and player data is available [here](https://overwatchleague.com/en-us/statslab) for free thanks to the Overwatch League.  
+ The data is structure like this:  
  
 | match_data                       |                                                       
 | -----------                      |                                 
@@ -55,5 +55,6 @@ the e-sports league for professional Overwatch players.
 | defender_control_percent: integer|                      
 | attacker_round_end_score: integer|                      
 | defender_round_end_score: integer| 
+
 
 
