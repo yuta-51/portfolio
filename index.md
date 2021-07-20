@@ -4,10 +4,10 @@ layout: about
 
 # About Me
 ---
-**Summary**
+**Summary**  
 Hello! My name is Yuta Akiya and I am a computer engineering graduate seeking opportunities in data science and analytics. 
 On this personal website, I showcase my projects, accomplishments, and skills. I hope you enjoy!  
-**Background**
+**Background**  
 I was born in Okazaki, Japan and moved to California when I was 3 years old. I recently earned a computer engineering degree from Cal Poly Pomona with an interest in going into the field of data. 
 
 # Education
@@ -24,13 +24,14 @@ I was born in Okazaki, Japan and moved to California when I was 3 years old. I r
 # Core Skills  
 ---
 **Python** - 3 years
-> Data: Numpy, Pandas, Matplotlib  
-> ML: Scikitlearn, Keras  
+> Data: Numpy, Pandas, Matplotlib, Seaborn  
+> ML: Sklearn
 > Web: Beautiful Soup, Requests, Flask  
 > Graphics: Pygame
 
 
 **SQL**  - 2 years
+> Experience through various projects
 > Intermediate to Advanced DDL and DML
 
 
@@ -39,4 +40,4 @@ I was born in Okazaki, Japan and moved to California when I was 3 years old. I r
 
 
 # Contact Me 
-> yutaakiya51(at)gmail(dot)com  
+> yutaakiya51(at)gmail(dot)com
