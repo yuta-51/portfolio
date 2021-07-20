@@ -183,7 +183,7 @@ x_train, x_test, y_train, y_test = train_test_split(train_test.drop('w_l', axis=
 OWL Data is allocated as such
 
 
-<img src="https://i.imgur.com/XjwCwAh.jpg" alt="split"
+<img src="https://i.imgur.com/Amoq8sp.jpg" alt="split"
 	title="data-allocation" height="350" />
 
 
