@@ -20,7 +20,8 @@ the e-sports league for professional Overwatch players.
     - Decision Tree
   - Seaborn
     - Confusion Matrix
-    - Heatmaps
+    - Heatmaps  
+ 
  
  # Procedure
  
@@ -56,11 +57,11 @@ the e-sports league for professional Overwatch players.
 | attacker_round_end_score: integer             |                                   |           
 | defender_round_end_score: integer             |                                   |    
 
+
 The match data contains highlevel information about the match: Most importantly, which teams were playing and who won because that will be out target variable. 
 The player data contains individual players' performance in each round of each match. The performance metrics are called stats in the data and are stored in a long format. 
 We will use matches from 2020 as training/testing data and use 2021 matches for validation.  
-
-The data is loaded into a PostgreSQL server using 
+The data is loaded into a PostgreSQL server using DDL statement CREATE TABLE and will be queried out for further use using Python and SQL. 
 
 
 ## Step 2: Data Exploration
