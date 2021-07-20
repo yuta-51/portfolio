@@ -23,11 +23,14 @@ the e-sports league for professional Overwatch players.
     - Heatmaps  
  
  
+ 
  # Procedure
  
  ## Step 1: Gathering Data
  The match and player data is available [here](https://overwatchleague.com/en-us/statslab) for free thanks to the Overwatch League (OWL).  
  The data is structured like this:  
+ 
+ <br>
  
 | match_data                                    |   player_data                     |                                
 | :---                                          |   :---                            |   
@@ -56,8 +59,7 @@ the e-sports league for professional Overwatch players.
 | defender_control_percent: integer             |                                   |           
 | attacker_round_end_score: integer             |                                   |           
 | defender_round_end_score: integer             |                                   |    
-
-
+<br>
 The match data contains highlevel information about the match: Most importantly, which teams were playing and who won because that will be out target variable. 
 The player data contains individual players' performance in each round of each match. The performance metrics are called stats in the data and are stored in a long format. 
 We will use matches from 2020 as training/testing data and use 2021 matches for validation.  
