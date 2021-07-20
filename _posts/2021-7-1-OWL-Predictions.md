@@ -57,7 +57,7 @@ So, what exactly does our data need to look like in order for it to be usable by
 One of the trickiest parts of this project is how to organize this data into our desired, wide-format data. The first step is to create a list that will serve as the column names for our future dataframe.
 
 
-### Getting all column names for the dataframe
+### Getting all column names
 ```python
 cur.execute("""
 SELECT DISTINCT stat_name
@@ -69,6 +69,7 @@ cols = ['match_id', 'team_one', 'team_two', 'w_l']
 cols.extend(all_hero_stats)
 ```
 
+the w_l feature is our target variable. When w_l is 1, team_one won the match. If w_l is 0, team_two won the match. 
 
 ### Getting all match IDs in 2020 
 ```python
@@ -111,6 +112,7 @@ def find_winner(match_id):
 
 Now we have the functions/queries necessary to fill three of the columns in the dataframe. Next, we will deal with the player stats data. The player_data table, as mentioned earlier, stores the player stats in long format. We will fill in each stats with the average of the team's players' stats. The following function takes in the match ID, team name, and year of the match and returns a list of the average of the 36 player stats during that match. 
 
+### Getting a team's average stats
 ```python
 def find_avg_stats(match_id, team, yr):
     cur.execute(f"""
@@ -131,6 +133,7 @@ def find_avg_stats(match_id, team, yr):
 ```
 Finally, we will take the difference between the average stats of both teams to get the differnece of each average stat. If the stat does not appear in the data, we will treat it as "null" in our dataframe. 
 
+### Getting the differnece between average stats of two teams in a match
 ```python
 def find_avg_stats_diff(match_id, team_1, team_2, yr):
     zipped = zip(find_avg_stats(match_id, team_1, yr), find_avg_stats(match_id, team_2, yr))
@@ -162,12 +165,41 @@ sns.heatmap(best_corr, cmap="Blues")
 	title="corr-heatmap" height="500" />
 
 
+We can see that there are only 7 features that have high correlation with the outcome of the match. Therefore, we can drop the other features. The less features the model relies on for predictions, the better. 
 
 
+## Step 4: Train/Test split
 
+The dataframe that we created in the previous step is what we will derive both training and testing data from. We first need to remove any features that are irrelevant for predicitons (i.e match_id, team_one, team_two). The model only needs to see the difference in average stats and the results. 
+The current dataframe containing matches from 2020 includes 256 matches total. We will use 70% of the data in the dataframe for training and 30% for testing. After we create our model, we will import match data from 2021 for validation. The train_test_split function from Sklearn makes this very easy to do. We just need to make sure that x data does not include the target variable and the y data only includes the target variable. 
 
-## Step 4: Model Building
+ 
+### Getting Training and Testing Data
+```python
+train_test = df[['w_l', 'time_alive', 'final_blows', 'eliminations', 'defensive_assists', 'deaths', 'average_time_alive', 'assists']]
+x_train, x_test, y_train, y_test = train_test_split(train_test.drop('w_l', axis=1), train['w_l'], train_size = 0.7, random_state=1)
+```
+
+OWL Data is allocated as such
 
 
 <img src="https://i.imgur.com/XjwCwAh.jpg" alt="split"
 	title="data-allocation" height="350" />
+
+
+## Step 5: Logistic Regression Model
+
+
+```python
+log_reg = LogisticRegression(solver='lbfgs')
+classifier = log_reg.fit(x_train, y_train)
+log_reg_test_score = log_reg.score(x_test, y_test)
+```
+
+
+
+
+
+
+## Step 6: Performance Evaluation
+
