@@ -177,7 +177,7 @@ The current dataframe containing matches from 2020 includes 256 matches total. W
 ### Getting Training and Testing Data
 ```python
 train_test = df[['w_l', 'time_alive', 'final_blows', 'eliminations', 'defensive_assists', 'deaths', 'average_time_alive', 'assists']]
-x_train, x_test, y_train, y_test = train_test_split(train_test.drop('w_l', axis=1), train['w_l'], train_size = 0.7, random_state=1)
+x_train, x_test, y_train, y_test = train_test_split(train_test.drop('w_l', axis=1), train_test['w_l'], train_size = 0.7, random_state=1)
 ```
 
 OWL Data is allocated as such
@@ -187,19 +187,83 @@ OWL Data is allocated as such
 	title="data-allocation" width="500" />
 
 
-## Step 5: Logistic Regression Model
+## Step 5: Validation Set
 
+To validate our trained models, we will use match data from the 2021 season. Again, all match IDs from the 2021 season are queried andused to get all of the needed features into the validation dataframe. The 2021 season features 150 matches comapred to the 2020 season's 256 matches. 
 
 ```python
-log_reg = LogisticRegression(solver='lbfgs')
-classifier = log_reg.fit(x_train, y_train)
-log_reg_test_score = log_reg.score(x_test, y_test)
+# Get all match IDs in 2021
+cur.execute("""
+SELECT DISTINCT esports_match_id
+FROM public.player_data_2021""")
+
+all_match_ids_2021 = [x[0] for x in cur.fetchall()]
+all_match_ids_2021 = sorted(all_match_ids_2021)
+
+df_dict = dict.fromkeys(all_match_ids_2021, 0)
+
+i = 1
+for match_id in all_match_ids_2021:
+    df_dict[match_id] = get_match_data(match_id, 2021)
+    print(i, end=' ')
+    i += 1
+
+val = pd.DataFrame.from_dict(df_dict, orient='index', columns=cols)
+```
+
+
+## Step 6: Model Building & Evaluation
+
+The models being used are
+* Logistic Regression
+* Random Forest
+* Decision Tree
+
+We define a function that will let use see the test score and validation score for any model. 
+```python
+def evaluate(model_name, model, x_test, y_test, x_val, y_val):
+    test_score = model.score(x_test, y_test)
+    val_score = model.score(x_val, y_val)
+    print(f"""
+    {model_name}
+    ----------------------
+    Test Score: {round(test_score, 4)}
+    Validation Score: {round(val_score, 4)}
+    """)
+```
+
+Then, we simply instatiate the models and run the evaluate() function. 
+
+```python
+log_model = LogisticRegression(solver='lbfgs', random_state = 1)
+dt_model = DecisionTreeClassifier(random_state = 1)
+rf_model = RandomForestClassifier(random_state = 1)
+
+evaluate('Logistic Regression', log_model.fit(x_train, y_train), x_test, y_test, x_val, y_val)
+evaluate('Decision Tree', dt_model.fit(x_train, y_train), x_test, y_test, x_val, y_val)
+evaluate('Random Forest', rf_model.fit(x_train, y_train), x_test, y_test, x_val, y_val)
 ```
 
 
 
 
+>    Logistic Regression  
+>   ----------------------  
+>    Test Score: 0.9423  
+>    Validation Score: 0.9333  
+    
 
+>    Decision Tree  
+>    ----------------------  
+>    Test Score: 0.9038  
+>    Validation Score: 0.94  
+    
 
-## Step 6: Performance Evaluation
+>    Random Forest  
+>    ----------------------  
+>    Test Score: 0.8846  
+>    Validation Score: 0.9333  
+  
+
+## Step 7: Conclusion
 
