@@ -26,7 +26,7 @@ the e-sports league for professional Overwatch players.
  
  # Project Overview
  <img src="https://i.imgur.com/gVAVuL1.jpg" alt="overview"
-	title="project-overview" height="250"/>  
+	title="project-overview" width="800"/>  
 
  
 # Procedure  
@@ -34,7 +34,7 @@ the e-sports league for professional Overwatch players.
 The match and player data is available [here](https://overwatchleague.com/en-us/statslab) for free thanks to the Overwatch League (OWL). We will use the match data as well as player data from the 2020 and 2021 season. The data is loaded into a PostgreDB server using DDL (CREATE TABLE) to create the table and set data column data types then importing the csv. 
 
 <img src="https://i.imgur.com/AIX4kk9.jpg" alt="tables"
-	title="postgre-tables" width="150" height="75"/>  
+	title="postgre-tables" width="150"/>  
 
 
 ## Step 2: Data Overview
@@ -42,7 +42,7 @@ The database schema looks like this but with multiple player_data tables for eac
 
 
 <img src="https://i.imgur.com/CU1oTgA.png" alt="schema"
-	title="data-schema" height="500" />
+	title="data-schema" width="700" />
 
 
 The match data contains highlevel information about the match: Most importantly, which teams were playing and who won because that will be our model's target variable. 
@@ -162,7 +162,7 @@ sns.heatmap(best_corr, cmap="Blues")
 
 
 <img src="https://i.imgur.com/qJ2HLUy.jpg" alt="heatmap"
-	title="corr-heatmap" height="500" />
+	title="corr-heatmap" width="500" />
 
 
 We can see that there are only 7 features that have high correlation with the outcome of the match. Therefore, we can drop the other features. The less features the model relies on for predictions, the better. 
@@ -184,7 +184,7 @@ OWL Data is allocated as such
 
 
 <img src="https://i.imgur.com/Amoq8sp.jpg" alt="split"
-	title="data-allocation" height="300" />
+	title="data-allocation" width="500" />
 
 
 ## Step 5: Logistic Regression Model
