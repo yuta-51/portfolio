@@ -22,6 +22,8 @@ the e-sports league for professional Overwatch players.
   - Seaborn
     - Confusion Matrix
     - Heatmaps  
+- SQL 
+  - DDL/DQL
  
  
  # Project Overview
