@@ -184,7 +184,7 @@ OWL Data is allocated as such
 
 
 <img src="https://i.imgur.com/Amoq8sp.jpg" alt="split"
-	title="data-allocation" height="350" />
+	title="data-allocation" height="300" />
 
 
 ## Step 5: Logistic Regression Model
