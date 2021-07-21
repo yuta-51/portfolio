@@ -216,8 +216,9 @@ val = pd.DataFrame.from_dict(df_dict, orient='index', columns=cols)
 
 The models being used are
 * Logistic Regression
-* Random Forest
 * Decision Tree
+* Random Forest
+
 
 We define a function that will let use see the test score and validation score for any model. 
 ```python
@@ -246,7 +247,6 @@ evaluate('Random Forest', rf_model.fit(x_train, y_train), x_test, y_test, x_val,
 
 
 
-
 >    Logistic Regression  
 >   ----------------------  
 >    Test Score: 0.9423  
@@ -266,4 +266,4 @@ evaluate('Random Forest', rf_model.fit(x_train, y_train), x_test, y_test, x_val,
   
 
 ## Step 7: Conclusion
-
+The models generally performed around the same in terms of predicting 2021 matches (around 93-94 % accuracy). However, the best model was the Decision Tree. There are several things that can be improved about this project: implementing a real-time win/loss probability prediciton system based on live match stats, increasing the accuracy with more tuning and trying more models, different feature engineering techniques, etc. However, the results were far beyong my expectations. I hope you enjoyed this project and thank you for reading!
