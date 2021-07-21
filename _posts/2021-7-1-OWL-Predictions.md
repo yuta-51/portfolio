@@ -162,7 +162,7 @@ sns.heatmap(best_corr, cmap="Blues")
 
 
 <img src="https://i.imgur.com/qJ2HLUy.jpg" alt="heatmap"
-	title="corr-heatmap" width="500" />
+	title="corr-heatmap" width="700" />
 
 
 We can see that there are only 7 features that have high correlation with the outcome of the match. Therefore, we can drop the other features. The less features the model relies on for predictions, the better. 
