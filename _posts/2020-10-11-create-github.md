@@ -188,7 +188,13 @@ def add_table(document, invoice_num, fields, container_count, field_count):
                 run.font.bold = True
 ```
 
-Notice how there is some formatting done like bolding the totals row. This is one of the requests made by the client. A finished table will look something like this:
+A finished table will look something like this:
+ <img src="https://i.imgur.com/uw5zsTP.jpg" alt="table"
+	title="data-table" width="800"/>  
+
+All of the data on the table was queried from the database. Notice how there was some formatting done such as bolding the totals row. This is a request by the client. 
 
 
+## Step 7: Converting the Program Into an Executable
+Of course, the final step is to make the program an executable file so that the company can use it on their computers without having to download the python interpreter as well as all of the libraries used. For this, we use [auto-py-to-exe](https://pypi.org/project/auto-py-to-exe/). 
 
