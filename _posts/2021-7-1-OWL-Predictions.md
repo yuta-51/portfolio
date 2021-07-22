@@ -31,6 +31,11 @@ the e-sports league for professional Overwatch players.
 	title="project-overview" width="800"/>  
 
  
+# Challenges
+- Manipulating the data into a usable form through SQL queries.
+- Dealing with inconsistent player data (hard to tell with long-format data)
+
+ 
 # Procedure  
 ## Step 1: Gathering Data
 The match and player data is available [here](https://overwatchleague.com/en-us/statslab) for free thanks to the Overwatch League (OWL). We will use the match data as well as player data from the 2020 and 2021 season. The data is loaded into a PostgreDB server using DDL (CREATE TABLE) to create the table and set data column data types then importing the csv. 
@@ -49,8 +54,6 @@ The database schema looks like this but with multiple player_data tables for eac
 
 The match data contains highlevel information about the match: Most importantly, which teams were playing and who won because that will be our model's target variable. 
 The player data contains individual players' performance in each round of each match. The performance metrics are called stats in the data and are stored in a long format. 
-
-
 
 
 
