@@ -7,8 +7,7 @@ layout: about
 **Summary**  
 Hello! My name is Yuta Akiya and I am a computer engineering graduate seeking opportunities in software engineering or data science. 
 On this personal website, I showcase my projects, accomplishments, and skills. I hope you enjoy!  
-**Background**  
-I was born in Okazaki, Japan and moved to California when I was 3 years old. I recently earned a computer engineering degree from Cal Poly Pomona with an interest in going into the field of data. 
+
 
 # Education
 ---
@@ -20,6 +19,7 @@ I was born in Okazaki, Japan and moved to California when I was 3 years old. I r
 **Google Professional Data Analytics**
 > 98% Overall Grade  
 > Covered and Practiced Data Cleaning, Analysis, and Visualization
+
 
 # Core Skills  
 ---
@@ -40,7 +40,7 @@ I was born in Okazaki, Japan and moved to California when I was 3 years old. I r
 
 
 # Resumé
-<a href="#" download>Download Resume</a>
+<a href="" download>Download Resume</a>
 
 # Contact Me 
 > yutaakiya51(at)gmail(dot)com
