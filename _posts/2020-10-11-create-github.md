@@ -76,7 +76,7 @@ def fetch_rows(table, id_name, _id):
     return cursor.fetchall()
 ```
 
-## Step 5: Export Queried Data onto Document
+## Step 4: Export Queried Data onto Document
 
 Now that we can query data out from the database, we need a way to actually write this data into the invoice document. For this, we use a technology called mailmerge. 
 Mail merge will allow us to fill in certain sections in a document with out own data. The template we will use for the invoice documents is shown below:
@@ -121,7 +121,7 @@ def merge_doc(invoice_num, document_type):
 Now all we have left is the table filled with container info. We cannot use mailmerge for this because the table size is not always the same. 
 
 
-## Step 6: Create Data Tables on Documents
+## Step 5: Create Data Tables on Documents
 As we saw earlier, the GUI prompts the user to select which container attributes they want the table to show. 
 Based on thos inputs, we will add a table by querying data from our database for each column. 
     
@@ -195,6 +195,6 @@ A finished table will look something like this:
 All of the data on the table was queried from the database. Notice how there was some formatting done such as bolding the totals row. This is a request by the client. 
 
 
-## Step 7: Converting the Program Into an Executable
+## Step 6: Converting the Program Into an Executable
 Of course, the final step is to make the program an executable file so that the company can use it on their computers without having to download the python interpreter as well as all of the libraries used. For this, we use [auto-py-to-exe](https://pypi.org/project/auto-py-to-exe/). 
 
