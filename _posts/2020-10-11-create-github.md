@@ -76,7 +76,7 @@ def fetch_rows(table, id_name, _id):
     return cursor.fetchall()
 ```
 
-## Step 5: Mailmerge Data onto Documents
+## Step 5: Export Queried Data onto Document
 
 Now that we can query data out from the database, we need a way to actually write this data into the invoice document. For this, we use a technology called mailmerge. 
 Mail merge will allow us to fill in certain sections in a document with out own data. The template we will use for the invoice documents is shown below:
@@ -121,6 +121,74 @@ def merge_doc(invoice_num, document_type):
 Now all we have left is the table filled with container info. We cannot use mailmerge for this because the table size is not always the same. 
 
 
-## Step 6: Mailmerge Data onto Documents
+## Step 6: Create Data Tables on Documents
+As we saw earlier, the GUI prompts the user to select which container attributes they want the table to show. 
+Based on thos inputs, we will add a table by querying data from our database for each column. 
+    
+```python
+# Add table to a document with container data
+def add_table(document, invoice_num, fields, container_count, field_count):
+    # Create main table for container information
+    table = document.add_table(rows=1, cols=field_count, style='Main Table')
+
+    # Fill in header row (row 0)
+    top_row = table.rows[0].cells
+    for i in range(field_count):
+        top_row[i].text = str((fields[i])[4:])
+
+    # Fill in container data (row 1 through container count+1)
+    for row in range(1, container_count + 1):
+        data_row = table.add_row().cells
+        for col in range(field_count):
+            try:
+                field_name_in_database = fields[col].replace(' ', '').replace('#', 'Num')[4:]
+                if field_name_in_database in CURRENCY_FIELDS:
+                    column_data = float(
+                        fetch_column(field_name_in_database, 'ContainerData', 'InvoiceNum', invoice_num)[row - 1][0])      
+                    column_data = "USD{:,.2f}".format(column_data)              
+                elif field_name_in_database in FIELDS_WITH_TOTALS:
+                    if field_name_in_database in FLOAT_FIELDS:
+                        column_data = str(round(float(fetch_column(field_name_in_database, 'ContainerData', 'InvoiceNum', invoice_num)[row - 1][0]), 3))
+                    else:
+                        column_data = str(int(fetch_column(field_name_in_database, 'ContainerData', 'InvoiceNum', invoice_num)[row - 1][0]))
+                else:
+                    column_data = str(
+                        fetch_column(field_name_in_database, 'ContainerData', 'InvoiceNum', invoice_num)[row - 1][0])
+
+                data_row[col].text = column_data
+            except:
+                show_error_message(f"Error inserting data for {field_name_in_database}. {DATABASE_PATH}")
+                return
+
+    # Create totals row 
+    totals_row = table.add_row().cells
+    for col in range(field_count):
+        if col == 0:
+            totals_row[col].text = "Total"
+        else:
+            field_name_in_database = fields[col].replace(' ', '').replace('Number', 'Num')[4:]
+            if field_name_in_database in FIELDS_WITH_TOTALS:
+                try:
+                    if field_name_in_database in CURRENCY_FIELDS:
+                        total_USD = float(fetch_total(field_name_in_database, invoice_num))
+                        total_USD = "USD{:,.2f}".format(total_USD) 
+                        totals_row[col].text = total_USD
+                    elif field_name_in_database in FLOAT_FIELDS:
+                        totals_row[col].text = str(round(fetch_total(field_name_in_database, invoice_num), 3))
+                    else:
+                        totals_row[col].text = str(int(fetch_total(field_name_in_database, invoice_num)))
+                except:
+                    show_error_message(f"Error getting field total for {field_name_in_database}")
+                    return
+
+    # Make totals row font bold
+    for cell in totals_row:
+        for paragraph in cell.paragraphs:
+            for run in paragraph.runs:
+                run.font.bold = True
+```
+
+Notice how there is some formatting done like bolding the totals row. This is one of the requests made by the client. A finished table will look something like this:
+
 
 
