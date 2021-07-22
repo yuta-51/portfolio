@@ -21,6 +21,14 @@ The company which will use this applicaiton distributes, exports, and imports fa
 - SQL 
   - DQL statements
 
+
+# Challenges
+- Speed optimization for generating the documents.
+  - Tradeoff: More memory usage/less queries or More queries/less memory usage. 
+  - Chose more queries/less memory usage because the generation time was not affected by too much. 
+- Creating an intuitive GUI that respects the given requirements. 
+
+
 # Project Overview
  <img src="https://i.imgur.com/Y0CyXUt.jpg" alt="overview"
 	title="project-overview" width="800"/>  
