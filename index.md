@@ -31,7 +31,7 @@ On this personal website, I showcase my projects, accomplishments, and skills. I
 
 
 **SQL**  - 2 years
-> Experience through various projects
+> Experience through various projects and coursework  
 > Intermediate to Advanced DDL and DML
 
 
