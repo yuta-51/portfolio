@@ -46,7 +46,39 @@ df.drop('student_id', axis=1, inplace=True)
 ## Step 2: EDA
 We need to get to know the features better. Here are some questions/thoughts I have at the moment.
 * Are students getting better or worse grades on the post test scores? 
+* Does each classroom perform differnetly in terms of average test scores?
 * What Does "experimental" and "standard" teaching style mean? Do they affect students' performance?
-* Generally, wealthier areas will have better standards for education/more access to higher quality tools for students. Is this shown in the data? 
+* Generally, wealthier schools (private, urban?) will have better standards for education/more access to higher quality tools for students. Is this shown in the data? 
 * The number of students in the classroom most likley negativel impact performance because the instructor's attention will inevitable be more distributed. 
+
+### Relationship Between Pre-test and Post-test Scores
+```python
+plt.figure(figsize=(10,5))
+sns.kdeplot(data=df['pretest'], shade=True, label='Pre-test')
+sns.kdeplot(data=df['posttest'], shade=True, label='Post-test')
+plt.title('Distribution of Pre Test and Post Test')
+plt.legend()
+plt.show()
+```
+
+
+<img src="https://bit.ly/2UCYevg" width=500 alt="kde-plot">
+
+
+The students tend to do better on the post-test compared to their pre-test (~20 points). 
+
+
+### Distribution of scores in each classroom
+```python
+fig= plt.figure(figsize=(30,10))
+sns.boxplot(x='classroom', y='posttest', data=df.sort_values('posttest'))
+```
+
+<img src="https://bit.ly/3ruRqMd" width=500 alt="class-scores">
+
+
+
+
+
+
 
