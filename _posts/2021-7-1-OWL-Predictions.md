@@ -23,7 +23,7 @@ the e-sports league for professional Overwatch players.
     - Confusion Matrix
     - Heatmaps  
 - SQL 
-  - DDL/DQL
+  - DDL/DQL  
  
  
  # Project Overview
