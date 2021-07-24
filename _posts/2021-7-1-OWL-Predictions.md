@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Predicting the Outcome of E-sports Matches Based on Player Performance"
+title:  "E-sports Match Prediction with Classification Models"
 info: "A binary classification machine learning project."
 tech: "Python, PostgreSQL, Sklearn"
 type: Project
