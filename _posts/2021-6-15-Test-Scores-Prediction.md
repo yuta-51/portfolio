@@ -36,7 +36,7 @@ We will be using linear regression as our model for this task.
 Data set available [here](https://www.kaggle.com/kwadwoofosu/predict-test-scores-of-students).
 
 
-# Procedures
+# Procedure
 
 ## Step 1: Import Data
 We begin by importing the csv data and dropping the student id feature as it is irrelevant to our project.
