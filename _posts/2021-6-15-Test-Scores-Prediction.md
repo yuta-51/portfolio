@@ -33,6 +33,9 @@ We will be using linear regression as our model for this task.
 - **posttest**: Post-test score (target variable)
 
 
+Data set available [here](https://www.kaggle.com/kwadwoofosu/predict-test-scores-of-students).
+
+
 # Procedures
 
 ## Step 1: Import Data
