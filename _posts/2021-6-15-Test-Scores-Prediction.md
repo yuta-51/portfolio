@@ -18,6 +18,19 @@ We will be using linear regression as our model for this task.
   * Seaborn
   * Sklearn
 
+# Dataset Overview
+## Features
+- school: The school the student attends
+- school_setting: The location of the school
+- school_type: Either public or non-public
+- classroom: classroom identifier
+- teaching_method: Either experimental or Standard
+- n_student: Number of students in the class
+- gender: Student's gender
+- lunch: Whether or not student qualifies for free/subsidized lunch.
+- pretest: Pre-test score	
+- posttest: Post-test score (target variable)
+
 
 # Procedures
 
