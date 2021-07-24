@@ -197,7 +197,7 @@ def add_table(document, invoice_num, fields, container_count, field_count):
 ```
 
 A finished table will look something like this:
- <img src="https://i.imgur.com/uw5zsTP.jpg" alt="table"
+ <img src="https://i.imgur.com/c1GdsXB.png" alt="table"
 	title="data-table" width="800"/>  
 
 All of the data on the table was queried from the database. Notice how there was some formatting done such as bolding the totals row. This is a request by the client. 
