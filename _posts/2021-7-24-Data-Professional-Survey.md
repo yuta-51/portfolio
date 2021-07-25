@@ -8,12 +8,13 @@ type: Project
 
 
 # Goal
-To perform data cleaning and analysis on the data to find informative insights/trends. As someone who hopes to find a career in the field of data, these insights may be useful for myself and others who are in the same position. 
+To perform data cleaning and analysis on the data to answer this question: How do data analysts, engineers, and scientists differ? Although I have a general understanding of the differneces, finding differences thorugh data analysis could be informative. 
 
 
 # Tools
 Python
 - Pandas
+- Seaborn
 Tableau
 - Dashboard
 
@@ -64,8 +65,8 @@ Some notes that the dataset uploader left for us:
 ## Potential Insights
 - Average Salary of each type of data professional.
 - Which countries pay data professionals best.
-- How much experience affects salary
-- Most popular primary database
+- How much experience affects salary.
+- Most popular primary database.
 - Average team size for each job type.
 - How much educational background affects salary
 
@@ -76,7 +77,9 @@ Some notes that the dataset uploader left for us:
 
 ## Step 2: Data Cleaning
 
+
 ## Step 3: EDA
+
 
 
 ## Step 4: Visualization
