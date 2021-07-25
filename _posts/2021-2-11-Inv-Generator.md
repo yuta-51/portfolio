@@ -7,7 +7,7 @@ type: Freelance Work
 ---
 
 # Goal
-The goal for this project was to create a desktop application that dynamically generates invoice documents based on an invoice number and data stored in an MS Access database. 
+The goal for this project is to create a desktop application that dynamically generates invoice documents based on an invoice number and data stored in an MS Access database. 
 The company which will use this applicaiton distributes, exports, and imports farming supplies internationally, so an invoice auotmation system is something that would save lots of time and effort.  
 
 # Tools
