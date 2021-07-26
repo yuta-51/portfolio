@@ -79,25 +79,45 @@ data = pd.read_excel('survey_data.xlsx', skiprows=3)
 
 ## Step 2: Data Cleaning
 
+
+
+
 ### Dropping Irrelevant Columns
 Just by reading the data description, we can see that there are certian columns we will not be using. Let's first drop those irrelevant columns!
 ```python
 data.drop(['PostalCode', 'Timestamp', 'Gender', 'Counter'], axis=1, inplace=True)
 ```
 
-# Removing Duplicate / Irrelevant Rows
-There is a useful pandas dataframe method ```duplicated()``` that gives us duplicate rows. In this dataset, there are a number of rows that are just filled with garbage. 
+### Removing Duplicate / Irrelevant Rows
+There is a useful pandas dataframe method ```duplicated``` that gives us duplicate rows. In this dataset, there are a number of rows that are filled with garbage and duplicated. 
 
 ```python
 data[data.duplicated()]
 ```
 
+<img src="https://i.imgur.com/B8raY49.jpg" alt="duplicate-rows" width="500">
+
+We will go ahead and remove these rows. 
+
+```python
+data.drop(data[data['SurveyYear']== 20.040615027560197].index, inplace=True, axis=0)
+```
 
 
-### Replacing Outliers
+### Replacing or Removing Outliers
+Now let's use the ```describe``` method on our data to see some key statistical features of each numerical column such as mean, standard deviation, max, etc.
 
+```python
+data.describe()
+```
+
+<img src="https://i.imgur.com/jL9aNcZ.jpg" alt="outliers" width="500">
+
+
+The mean and standard deviation look fine, but take a look at the max values. There is no possible way someone has been working in data for 2020 years! They must have mistaken it for the year that they became a data professional. Also, there is no way a company has had their databse for almost 54 thousand years. This means there is atleast one outlier value for both columns. Let's look for more potential outliers and either replace or remove them . 
 
 ## Step 3: EDA
+
 
 
 
