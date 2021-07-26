@@ -80,8 +80,6 @@ data = pd.read_excel('survey_data.xlsx', skiprows=3)
 ## Step 2: Data Cleaning
 
 
-
-
 ### Dropping Irrelevant Columns
 Just by reading the data description, we can see that there are certian columns we will not be using. Let's first drop those irrelevant columns!
 ```python
@@ -105,7 +103,7 @@ data.drop(data[data['SurveyYear']== 20.040615027560197].index, inplace=True, axi
 
 
 ### Replacing or Removing Outliers
-Now let's use the ```describe``` method on our data to see some key statistical features of each numerical column such as mean, standard deviation, max, etc.
+Now let's use the ```describe``` method on our data to see some key numerical/statistical features of each numerical column such as mean, standard deviation, max, etc.
 
 ```python
 data.describe()
@@ -114,9 +112,46 @@ data.describe()
 <img src="https://i.imgur.com/jL9aNcZ.jpg" alt="outliers" width="500">
 
 
-The mean and standard deviation look fine, but take a look at the max values. There is no possible way someone has been working in data for 2020 years! They must have mistaken it for the year that they became a data professional. Also, there is no way a company has had their databse for almost 54 thousand years. This means there is atleast one outlier value for both columns. Let's look for more potential outliers and either replace or remove them . 
+The mean and standard deviations look fine, but take a look at the max values. There is no possible way someone has been working in data for 2020 years! They must have mistaken it for the year that they became a data professional. Also, there is no way a company has had their databse for almost 54 thousand years. This means there is atleast one outlier value for both columns. Let's look for more potential outliers in the 'YearsWithThisDatabase' and 'YearsWithThisTypeOfJob' columns.
+
+
+Let's use the ```quantile``` method to check the 99th percentile values of the user responses (i.e the largest responses which are greater than 99% of the responses).
+```python
+data[data['YearsWithThisDatabase'] > data['YearsWithThisDatabase'].quantile(.99)][['YearsWithThisDatabase']].sort_values('YearsWithThisDatabase')
+```
+
+<img src="https://i.imgur.com/2On8aRS.jpg" alt="years-with-db-outliers" width="200">
+
+There are 8 noticable outliers. Anything of the responses above 40 years is impossible, so let's replace those with mean values, since we can still use the responses. The respondent could have misunderstood the question or mistyped.
+
+
+```python
+data[data['YearsWithThisDatabase'] > 40] = data['YearsWithThisDatabase'].mean()
+```
+
+
+Now that we have replaced the outliers with the mean of the responses, plotting a histogram of the responses will show us a more realistic distribution.
+
+
+<img src="https://i.imgur.com/8KKhxTJ.jpg" alt="histogram-years-w-db" width="500">
+
+
+Next, let's check the 'YearsWithThisTypeOfJob' column for outliers.
+
+```python
+data[data['YearsWithThisTypeOfJob'] > data['YearsWithThisTypeOfJob'].quantile(.999)][['YearsWithThisTypeOfJob']].sort_values('YearsWithThisTypeOfJob')
+```
+
+<img src="https://i.imgur.com/wERtnU7.jpg" alt="histogram-years-w-db" width="500">
+
+One respondent clearly misunderstood the question. There is no way they've worked 2020 years at this job, but their answer for other questions seem legitamate, so let's replace their response with a mean value.
+
+```python
+data.at[628,'YearsWithThisTypeOfJob'] = data['YearsWithThisTypeOfJob'].mean()
+```
 
 ## Step 3: EDA
+
 
 
 
