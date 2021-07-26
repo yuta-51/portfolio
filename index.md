@@ -24,10 +24,10 @@ On this personal website, I showcase my projects, accomplishments, and skills. I
 # Core Skills  
 ---
 **Python** - 3 years
-> Data: Numpy, Pandas, Matplotlib, Seaborn  
-> ML: Sklearn
-> Web: Beautiful Soup, Requests, Flask  
-> Graphics: Pygame
+> **Data**: Numpy, Pandas, Matplotlib
+> **Machine Learning**: Sklearn
+> **Web**: BeautifulSoup, Requests, Flask  
+> **Graphics**: PyGame
 
 
 **SQL**  - 2 years
