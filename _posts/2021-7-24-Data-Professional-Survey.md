@@ -8,15 +8,13 @@ type: Project
 
 
 # Goal
-To perform data cleaning and analysis on the data to answer this question: How do data analysts, engineers, and scientists differ? Although I have a general understanding of the differneces, finding differences thorugh data analysis could be informative. 
+To perform data cleaning and analysis on the data to answer this question: How/Where do data analysts, engineers, and scientists differ? This could be interms of income, responsibilities, educational background, etc. 
 
 
 # Tools
 Python
 - Pandas
 - Seaborn
-Tableau
-- Dashboard
 
 
 # Challenges
@@ -73,9 +71,30 @@ Some notes that the dataset uploader left for us:
 # Procedure
 
 ## Step 1: Importing Data
+As the data is directly downloaded as an Excel file, we will use read_excel to read it into a dataframe. The first 3 rows were irrelevant so they were skipped.  
 
+```python
+data = pd.read_excel('survey_data.xlsx', skiprows=3)
+```
 
 ## Step 2: Data Cleaning
+
+### Dropping Irrelevant Columns
+Just by reading the data description, we can see that there are certian columns we will not be using. Let's first drop those irrelevant columns!
+```python
+data.drop(['PostalCode', 'Timestamp', 'Gender', 'Counter'], axis=1, inplace=True)
+```
+
+# Removing Duplicate / Irrelevant Rows
+There is a useful pandas dataframe method ```duplicated()``` that gives us duplicate rows. In this dataset, there are a number of rows that are just filled with garbage. 
+
+```python
+data[data.duplicated()]
+```
+
+
+
+### Replacing Outliers
 
 
 ## Step 3: EDA
