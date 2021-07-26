@@ -120,7 +120,7 @@ Let's use the ```quantile``` method to check the 99th percentile values of the u
 data[data['YearsWithThisDatabase'] > data['YearsWithThisDatabase'].quantile(.99)][['YearsWithThisDatabase']].sort_values('YearsWithThisDatabase')
 ```
 
-<img src="https://i.imgur.com/2On8aRS.jpg" alt="years-with-db-outliers" width="200">
+<img src="https://i.imgur.com/2On8aRS.jpg" alt="years-w-db-outliers" width="200">
 
 There are 8 noticable outliers. Anything of the responses above 40 years is impossible, so let's replace those with mean values, since we can still use the responses. The respondent could have misunderstood the question or mistyped.
 
@@ -142,13 +142,19 @@ Next, let's check the 'YearsWithThisTypeOfJob' column for outliers.
 data[data['YearsWithThisTypeOfJob'] > data['YearsWithThisTypeOfJob'].quantile(.999)][['YearsWithThisTypeOfJob']].sort_values('YearsWithThisTypeOfJob')
 ```
 
-<img src="https://i.imgur.com/wERtnU7.jpg" alt="histogram-years-w-db" width="500">
+<img src="https://i.imgur.com/wERtnU7.jpg" alt="outlier-years-w-this-job" width="300">
 
-One respondent clearly misunderstood the question. There is no way they've worked 2020 years at this job, but their answer for other questions seem legitamate, so let's replace their response with a mean value.
+One respondent clearly misunderstood the question. There is no way they've worked 2020 years at this job, but their answer for other questions seem legitamate, so let's replace their response (row 628) with a mean value.
 
 ```python
 data.at[628,'YearsWithThisTypeOfJob'] = data['YearsWithThisTypeOfJob'].mean()
 ```
+
+<img src="https://i.imgur.com/08ECYl0.jpg" alt="histogram-years-w-this-job" width="300">
+
+Now the histogram looks reasonable. 
+
+
 
 ## Step 3: EDA
 
