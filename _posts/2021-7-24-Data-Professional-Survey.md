@@ -87,6 +87,7 @@ data = pd.read_excel('survey_data.xlsx', skiprows=3)
 
 ### Dropping Irrelevant Columns
 Just by reading the data description, we can see that there are certian columns we will not be using. Let's first drop those irrelevant columns!
+
 ```python
 data.drop(['PostalCode', 'Timestamp', 'Gender', 'Counter'], axis=1, inplace=True)
 ```
@@ -107,8 +108,15 @@ data.drop(data[data['SurveyYear']== 20.040615027560197].index, inplace=True, axi
 ```
 
 
-
 ### Replacing or Removing Outliers
+Outliers only appear in numerical data. Let's take a look at the data type for each column in the data by using the ```dtypes``` method.
+
+<img src="https://i.imgur.com/XB7R8E5.jpg" alt="data-types" width="500">
+
+The columns with numerical data types (float, integer, double) is what we are looking for. What I notice is that 'HoursWorkedPerWeek' and 'TelecommuteDaysPerWeek' are not numerical. This is because they both have 'Not Asked' values which was explained at the top of this post. Even if one response is non-numerical, the entire column cannot be of a numerical datatype like float or int. With more exploration, it was found that 'TelecommuteDaysPerWeek' was a multiple choice quesiton which had responses like 'None, or less than 1 day per week' and '5 or more', and the 'HoursWorkedPerWeek' column just had 'Not Asked' entries. 
+
+
+
 Now let's use the ```describe``` method on our data to see some key numerical/statistical features of each numerical column such as mean, standard deviation, max, etc.
 
 ```python
