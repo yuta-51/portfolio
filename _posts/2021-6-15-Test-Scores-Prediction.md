@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Test Score Prediction using Linear Regression"
-info: "Predicting Students' Test Performance using regression."
+info: "A linear regression project to predict student test scores."
 tech: "Python"
 type: Kaggle Kernel
 ---
