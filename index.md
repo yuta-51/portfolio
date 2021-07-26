@@ -36,7 +36,8 @@ On this personal website, I showcase my projects, accomplishments, and skills. I
 
 
 **Spreadsheets** - 2 years
-> Excel, Google Sheets
+> Excel  
+> Google Sheets
 
 
 # Resumé
