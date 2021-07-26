@@ -11,6 +11,11 @@ type: Project
 To perform data cleaning and analysis on the data to answer this question: How/Where do data analysts, engineers, and scientists differ? This could be interms of income, responsibilities, educational background, etc. 
 
 
+# Assumptions
+- Respondents answered the survey questions honestly. 
+- Survey questions were not biased in anyway.
+
+
 # Tools
 Python
 - Pandas
@@ -18,7 +23,7 @@ Python
 
 
 # Challenges
-
+- Dealing with the imperfections of raw data (lots of cleaning)
 
 
 # Data Overview
@@ -102,6 +107,7 @@ data.drop(data[data['SurveyYear']== 20.040615027560197].index, inplace=True, axi
 ```
 
 
+
 ### Replacing or Removing Outliers
 Now let's use the ```describe``` method on our data to see some key numerical/statistical features of each numerical column such as mean, standard deviation, max, etc.
 
@@ -150,9 +156,18 @@ One respondent clearly misunderstood the question. There is no way they've worke
 data.at[628,'YearsWithThisTypeOfJob'] = data['YearsWithThisTypeOfJob'].mean()
 ```
 
-<img src="https://i.imgur.com/08ECYl0.jpg" alt="histogram-years-w-this-job" width="300">
+<img src="https://i.imgur.com/08ECYl0.jpg" alt="histogram-years-w-this-job" width="500">
 
 Now the histogram looks reasonable. 
+
+
+### Renaming Columns
+
+In one column, 'Survey Year', the words are separated by a space. The rest of the column names are not separated with a space. Let's fix this by replacing the column name.
+
+```python
+data.rename(columns={"Survey Year": "SurveyYear"}, inplace=True)
+```
 
 
 
