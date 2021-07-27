@@ -5,7 +5,7 @@ layout: about
 # About Me
 ---
 **Summary**  
-Hello! My name is Yuta Akiya and I am a computer engineering graduate seeking opportunities in software engineering, data analytics, or data science. 
+Hello! My name is Yuta Akiya and I am a computer engineering graduate seeking opportunities as a software engineering, data analytics, or data science. 
 On this personal website, I showcase my projects, accomplishments, and skills. I hope you enjoy!  
 
 
@@ -23,19 +23,19 @@ On this personal website, I showcase my projects, accomplishments, and skills. I
 
 # Core Skills  
 ---
-**Python** - 3 years
+**Python**
 > **Data**: Numpy, Pandas, Matplotlib  
 > **Machine Learning**: Sklearn  
 > **Web**: BeautifulSoup, Requests, Flask  
 > **Graphics**: PyGame  
 
 
-**SQL**  - 2 years
+**SQL**
 > Experience through various projects and coursework  
 > Intermediate to Advanced DDL and DML
 
 
-**Spreadsheets** - 2 years
+**Spreadsheets**
 > Excel  
 > Google Sheets
 
