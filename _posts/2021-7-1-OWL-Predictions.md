@@ -4,6 +4,7 @@ title:  "E-sports Match Prediction with Classification Models"
 info: "A binary classification machine learning project."
 tech: "Python, PostgreSQL, Sklearn"
 type: Project
+img: test
 ---
 
 # Goal
