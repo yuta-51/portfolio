@@ -4,7 +4,7 @@ title:  "Data Professionals Survey Analysis"
 info: "An analysis project on a raw, public survey dataset."
 tech: "Python"
 type: Project
-img: test
+thumbnail: https://blog.timescale.com/content/images/2019/02/_IoT---Relational-Database.png
 ---
 
 
