@@ -4,6 +4,7 @@ title:  "Data Professionals Survey Analysis"
 info: "An analysis project on a raw, public survey dataset."
 tech: "Python"
 type: Project
+img: test
 ---
 
 
