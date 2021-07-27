@@ -4,7 +4,7 @@ title:  "Test Score Prediction using Linear Regression"
 info: "A linear regression project to predict student test scores."
 tech: "Python"
 type: Kaggle Kernel
-img: test
+thumbnail: https://i.imgur.com/iTnwthf.png
 ---
 
 # Goal
