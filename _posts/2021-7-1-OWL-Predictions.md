@@ -4,7 +4,7 @@ title:  "E-sports Match Prediction with Classification Models"
 info: "A binary classification machine learning project."
 tech: "Python, PostgreSQL, Sklearn"
 type: Project
-img: test
+thumbnail: https://upload.wikimedia.org/wikipedia/en/thumb/7/74/Overwatch_League_logo.svg/1200px-Overwatch_League_logo.svg.png
 ---
 
 # Goal
