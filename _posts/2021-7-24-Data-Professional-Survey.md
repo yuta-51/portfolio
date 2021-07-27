@@ -135,10 +135,13 @@ hrs_int[hrs_int['HoursWorkedPerWeek'] > hrs_int['HoursWorkedPerWeek'].quantile(.
 
 All values displayed here are certainly outliers, but there is only one invalid response of 200 hours which we will replace. The rest are unlikely, but possible so we will leave them.
 
-
+```python
+data.loc[7371, 'HoursWorkedPerWeek'] = data['HoursWorkedPerWeek'].mean()
+```
 
 
 Now let's use the ```describe``` method on our data to see some key numerical/statistical features of each numerical column such as mean, standard deviation, max, etc.
+
 
 ```python
 data.describe()
@@ -201,7 +204,7 @@ data.rename(columns={"Survey Year": "SurveyYear"}, inplace=True)
 
 
 ## Step 3: EDA
-
+Now that our data is cleaned, it is ready to be analyzed. Let's go back to our main goal: to look for differences between data analysts, sciensists, and engineers in terms of various metrics. 
 
 
 
