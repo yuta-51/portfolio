@@ -11,7 +11,7 @@ type: Project
 To perform data cleaning and analysis on the data to answer this question: How/Where do data analysts, engineers, and scientists differ? This could be interms of income, responsibilities, educational background, etc. 
 
 
-# Assumptions
+## Assumptions
 - Respondents answered the survey questions honestly. 
 - Survey questions were not biased in anyway.
 
@@ -20,10 +20,7 @@ To perform data cleaning and analysis on the data to answer this question: How/W
 Python
 - Pandas
 - Seaborn
-
-
-# Challenges
-- Dealing with the imperfections of raw data (lots of cleaning)
+- Matplotlib
 
 
 # Data Overview
@@ -63,7 +60,6 @@ Some notes that the dataset uploader left for us:
 **otherjobduties**: Any other job duties  
 **kindsoftasksperformed**: Kinds of tasks performed  
   
-
 
 ## Potential Insights
 - Average Salary of each type of data professional.
@@ -113,7 +109,32 @@ Outliers only appear in numerical data. Let's take a look at the data type for e
 
 <img src="https://i.imgur.com/XB7R8E5.jpg" alt="data-types" width="500">
 
-The columns with numerical data types (float, integer, double) is what we are looking for. What I notice is that 'HoursWorkedPerWeek' and 'TelecommuteDaysPerWeek' are not numerical. This is because they both have 'Not Asked' values which was explained at the top of this post. Even if one response is non-numerical, the entire column cannot be of a numerical datatype like float or int. With more exploration, it was found that 'TelecommuteDaysPerWeek' was a multiple choice quesiton which had responses like 'None, or less than 1 day per week' and '5 or more', and the 'HoursWorkedPerWeek' column just had 'Not Asked' entries. 
+The columns with numerical data types (float, integer, double) is what we are looking for. What I notice is that 'HoursWorkedPerWeek' and 'TelecommuteDaysPerWeek' are not numerical. This is because they both have 'Not Asked' values which was explained at the top of this post. Even if one response is non-numerical, the entire column cannot be of a numerical datatype like float or int. 
+
+Upon further exploration, it was found that 'TelecommuteDaysPerWeek' was a multiple choice quesiton which had responses like 'None, or less than 1 day per week' and '5 or more', so it could be classified as categorical data which has no outliers. On the other hand, 'HoursWorkedPerWeek' was not of a numerical data type because it had 'Not Asked' entires. Therefore, we can disregard the 'Not Asked' entries and find outliers. 
+
+Let's see what the distribution of the 'HoursWorkedPerWeek' column looks like. This line of code excludes the 'Not Asked' entries in the column and converts it to an integer type so it is graphable. 
+
+```python
+sns.histplot(data=data[data['HoursWorkedPerWeek']!= 'Not Asked']['HoursWorkedPerWeek'].astype('int'))
+```
+
+<img src="https://i.imgur.com/ZX0FsZE.jpg" alt="histogram-hrs-worked" width="500">
+
+
+There are only 168 hours in a week, meaning there are invalid responses as well as some outliers. Let's look at the exact values. These two lines of code will 
+1.  Create a temporary dataframe of just the 'HoursWorkedPerWeek' as an integer column
+2.  Display the 99 th percentile values (greater than 99% of the responses)
+
+```python
+hrs_int = data[data['HoursWorkedPerWeek']!= 'Not Asked']['HoursWorkedPerWeek'].astype('int').to_frame()
+hrs_int[hrs_int['HoursWorkedPerWeek'] > hrs_int['HoursWorkedPerWeek'].quantile(.999)][['HoursWorkedPerWeek']].sort_values('HoursWorkedPerWeek')
+```
+
+<img src="https://i.imgur.com/0rN9cig.jpg" alt="highest-hrs-worked" width="350">
+
+All values displayed here are certainly outliers, but there is only one invalid response of 200 hours which we will replace. The rest are unlikely, but possible so we will leave them.
+
 
 
 
