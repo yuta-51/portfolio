@@ -26,7 +26,7 @@ the e-sports league for professional Overwatch players.
   - DDL/DQL  
  
  
- # Project Overview
+# Project Overview
  <img src="https://i.imgur.com/gVAVuL1.jpg" alt="overview"
 	title="project-overview" width="800"/>  
 
