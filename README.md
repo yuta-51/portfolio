@@ -11,10 +11,6 @@ Based on Chester How's tale-theme(https://github.com/chesterhow/tale) with a few
   * You can manage your project experience just like running a blog.
 
 
-# Preview
-[![AP Screenshot](https://github.com/kssim/ap/blob/master/screenshot.png?raw=true)](https://kssim.github.io/ap/)
-
-
 # Usage
 1. Fork and clone the AP repo:
     * git clone https://github.com/kssim/ap.git
@@ -63,20 +59,6 @@ And to enable Google Analytics, add your [Traking ID](https://support.google.com
 
 
 
-### About You
-Meta variables hold basic information about your profile and resume.  
-Change these variables in _config.yml:  
-```yml
-author:
-  name: [Your Name]
-  desc: [Short introduction]
-  email: [Your E-Mail Address]
-  selfie: [Your Avatar]
-```
-Please configure this before using the theme.
-
-
-
 ### SNS Information
 Your SNS information to display at the bottom of the page.  
 All values except "email" are text values.  
@@ -106,22 +88,6 @@ social:
   youtube:
   default_txt: "Follow On"
 ```
-
-
-## Portfolio Schema
-```markdown
----
-layout: post
-title:  [Project title to show in portfolio list]
-info: [A brief introduction to show in portfolio list]
-tech: [The technologies used in the project to show in portfolio list]
-type: [Property of the project to be displayed in front of the project's info(toy or company name)]
----
-```
-
-## Other formats
-It uses the markdown syntax by default, and there is no format other than the one mentioned above.  
-You can use it as you like.  
 
 
 ## License
