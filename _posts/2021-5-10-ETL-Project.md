@@ -114,8 +114,65 @@ We will now transform the data that we extracted.
 
 1. Market Cap. will be converted from USD to GBP
 2. Market Cap. will be rounded to 3 decimal places
-3. The column will be renamed from ```Market Cap (US$ Billion)``` to ``Market Cap (GBP$ Billion)```
+3. The column will be renamed from ```Market Cap (US$ Billion)``` to ```Market Cap (GBP$ Billion)```  
+
+
+Let's define a function that will perform these this transformation on a dataframe.
+
+```python
+def transform(df):
+    df['Market Cap (US$ Billion)'] = df['Market Cap (US$ Billion)'] * exchange_rate
+    df['Market Cap (US$ Billion)'] = round(df['Market Cap (US$ Billion)'], 3)
+    df.rename({"Market Cap (US$ Billion)": "Market Cap (GBP$ Billion)"}, axis=1, inplace=True)
+    return df
+```
 
 
 ## Step 3: Load
+Now that we have the ability to extract and transform the data, we just need to load it as a csv or any format that can be stored in a databse.
+A small function using the ```to_csv``` method will do the trick.
 
+
+```python
+def load(df):
+    df.to_csv('bank_market_cap_gbp.csv', index=False)
+```
+
+
+## Step 4: Logging 
+Finally, taking all the functions we've written, we can actually perform the entire ETL process while also logging the program's activity.
+The ```log``` function will allow us to keep track of how much time the program spends on each step of the process in a text file. 
+
+```python
+def log(message):
+    timestamp_format = '%Y-%h-%d-%H:%M:%S' # Year-Monthname-Day-Hour-Minute-Second
+    now = datetime.now() # get current timestamp
+    timestamp = now.strftime(timestamp_format)
+    with open("logfile.txt","a") as f:
+        f.write(timestamp + ',' + message + '\n')
+```
+
+Now let's put everything together!
+
+
+```python
+log("ETL Job Started")
+
+# Extract Phase
+log("Extract phase Started")
+df =extract()
+log("Extract phase Ended")
+
+# Transform Phase
+log("Transform phase Started")
+df = transform(df)
+log("Transform phase Ended")
+
+#Load Phase
+log("Load phase Started")
+load(df)
+log("Load phase Ended")
+```
+
+# Conclusion
+In this project, I learned about how ETL pipeline process works. Although I was already familiar with extraction of data, transforming (based on certain requirements) and also logging the progress of the program was a new concept. I can see how ETL pipelines can become much more complex and large-scale. 
