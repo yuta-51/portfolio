@@ -28,7 +28,7 @@ Python
 ## Step 1: Extract
 
 ### Web Scraping Data
-The first extraction method we will use is web scraping. The goal here is to scrape table data from a wikipedia page featureing the market capitalization of banks. 
+The first extraction method we will use is web scraping. The goal here is to scrape table data from [a wikipedia page](https://en.wikipedia.org/wiki/List_of_largest_banks) featureing the market capitalization of banks. 
 To get started, we will get the html response of the target wikipedia page using requets.
 
 ```python
@@ -63,7 +63,7 @@ data.to_csv('wikipedia_table_data.csv')
 
 
 ### API Data Extraction
-
+Our next source of data extraction is an [exchange rate API](https://exchangeratesapi.io/). 
 
 ## Step 2: Transform
 
