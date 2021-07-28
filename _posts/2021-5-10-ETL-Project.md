@@ -63,10 +63,58 @@ data.to_csv('wikipedia_table_data.csv')
 
 
 ### API Data Extraction
-Our next source of data extraction is an [exchange rate API](https://exchangeratesapi.io/). 
+Our next source of data extraction is an [exchange rate API](https://exchangeratesapi.io/). After signging up and obtaining an API key, we can use requests to get an API response. 
+
+
+```python
+url = "http://api.exchangeratesapi.io/v1/latest?base=EUR&access_key=**KEY**"
+response = requests.get(url)
+response.text
+```
+
+
+The ```reponse``` variable is the JSON response from the API and can be read as a string JSON by looking at its ```text``` attribute. We now want to store this JSON resposne into a dataframe.
+
+
+``python
+df = pd.read_json(response.text)
+```
+
+There are many irrelevant columns in the dataframe, as we only need the currency name, and its exchange rate. We will filter out the rest of the columns by only selecting one column, and turning it into a dataframe from a series.
+
+
+```python
+df = df['rates'].to_frame()
+```
+
+Now that we have our desired data in a dataframe, we can save it as a csv file.
+
+```python
+df.to_csv('exchange_rates_1.csv')
+```
+
+At this point, we have all the data that we need. Let's create a function to extract the csv files now and create a dataframe out of the scraped data.
+
+```python
+def extract_from_csv(file):
+    return pd.read_json(file)
+```
+
+Extracting the exchange rate for British Pounds form the exchange rate data.
+
+```python
+exchange_rates = pd.read_csv('exchange_rates.csv', index_col=0)
+exchange_rate = exchange_rates.loc['GBP']['Rates']
+```
+
+
 
 ## Step 2: Transform
+We will now transform the data that we extracted.
 
+1. Market Cap. will be converted from USD to GBP
+2. Market Cap. will be rounded to 3 decimal places
+3. The column will be renamed from ```Market Cap (US$ Billion)``` to ``Market Cap (GBP$ Billion)```
 
 
 ## Step 3: Load
