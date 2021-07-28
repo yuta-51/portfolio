@@ -2,7 +2,7 @@
 layout: post
 title:  "Financial Data ETL"
 info: "ETL Data Engineering Project."
-tech: "Python"
+tech: "Web Scraping, APIs, ETL"
 type: Coursework
 thumbnail: https://media.istockphoto.com/photos/financial-and-technical-data-analysis-graph-showing-stock-market-picture-id943292690?k=6&m=943292690&s=612x612&w=0&h=AqwqtxoCVyAmgi1sYfGwsYKHpb_6pT19AVHmzmGg-a4=
 ---
