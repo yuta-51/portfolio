@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Invoice Document Generator"
-info: "Python Desktop Applicaiton"
+info: "Application that dynamically generates invoice documents."
 tech: "Python, MS Access"
 type: Freelance Work
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Microsoft_Office_Access_%282019-present%29.svg/1200px-Microsoft_Office_Access_%282019-present%29.svg.png
