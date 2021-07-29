@@ -34,13 +34,12 @@ On this personal website, I showcase my projects, accomplishments, and skills. M
 ---
 ### Python
 > **Data**: Pandas, Numpy  
-> - ETL, EDA  
 > **Visualization**: Matplotlib, Seaborn    
 > **Machine Learning**: Sklearn, Keras    
 > **Web**: BeautifulSoup, Requests, Flask   
-> - APIs, Web Apps, Web Scraping   
 > **Graphics**: PyGame    
 > **GUIs**: Tkinter    
+> APIs, Desktop Applications, EDA, ETL, Visualization, Web Scraping  
 
 
 
