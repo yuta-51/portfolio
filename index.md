@@ -59,7 +59,7 @@ On this personal website, I showcase my projects, accomplishments, and skills. P
 > Graphs, Dashboards  
 
 
-# Resumé
+# Resume
 ---
 > <a href="" download>Download Resume</a>
 
