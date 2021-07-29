@@ -78,7 +78,7 @@ fig= plt.figure(figsize=(30,10))
 sns.boxplot(x='classroom', y='posttest', data=df.sort_values('posttest'))
 ```
 
-<img src="https://i.imgur.com/97kOdK8.png" width=500 alt="class-scores">
+<img src="https://i.imgur.com/97kOdK8.png" width=800 alt="class-scores">
 
 ### Free Lunch Qualification and Gender
 ```python
@@ -116,7 +116,7 @@ plt.tight_layout()
 ```
 
 
-<img src="https://i.imgur.com/xhejPlO.png" width=500 alt="triple-bar">
+<img src="https://i.imgur.com/xhejPlO.png" width=700 alt="triple-bar">
 All three features seem to affect student test scores in some way. 
 
 
