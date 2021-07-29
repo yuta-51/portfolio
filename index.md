@@ -7,7 +7,7 @@ layout: about
 
 ### Summary
 > I am a computer engineering graduate seeking job opportunities in the field of data.
-On this personal website, I showcase my projects, accomplishments, and skills. My resume and contact information are towards the bottom of this page. 
+On this personal website, I showcase my projects, accomplishments, and skills. Please use the navigation bar on the top right of the page to see my projects. Scroll further down on this page to see my resume and contact information. Thank you!
 
 
 ### Aspiration
