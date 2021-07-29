@@ -297,7 +297,7 @@ for i, job in enumerate(jobs):
 ```
 
 
-<img src="https://i.imgur.com/CGZduWO.png" alt="tasks-pie-chart" width="1000">
+<img src="https://i.imgur.com/96W9PnJ.png" alt="tasks-pie-chart" width="600">
 
 
 # Conclusion
