@@ -44,19 +44,19 @@ On this personal website, I showcase my projects, accomplishments, and skills. M
 
 
 ### SQL
-> Experience through various projects and coursework  
-> Both relational and distributed databases
-> MySQL, PostgreSQL, SparkSQL
+> Experience through various projects and coursework    
+> Both relational and distributed databases  
+> MySQL, PostgreSQL, SparkSQL  
 
 
 ### Spreadsheets
-> Data cleaning, Functions, Pivot Tables, VLOOKUP, Graphs
-> Proficient in both Excel and Google Sheets
+> Data cleaning, Functions, Pivot Tables, VLOOKUP, Graphs  
+> Proficient in both Excel and Google Sheets  
 
 
 ### Tableau
-> Experience through coursework
-> Graphs, Dashboards
+> Experience through coursework  
+> Graphs, Dashboards  
 
 
 # Resumé
