@@ -76,7 +76,7 @@ response.text
 The ```reponse``` variable is the JSON response from the API and can be read as a string JSON by looking at its ```text``` attribute. We now want to store this JSON resposne into a dataframe.
 
 
-``python
+```python
 df = pd.read_json(response.text)
 ```
 
