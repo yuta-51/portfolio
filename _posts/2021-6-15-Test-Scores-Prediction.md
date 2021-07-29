@@ -66,7 +66,7 @@ plt.show()
 ```
 
 
-<img src="https://i.imgur.com/iTnwthf.png" width=500 alt="kde-plot">
+<img src="https://i.imgur.com/iTnwthf.png" width="500" alt="kde-plot">
 
 
 The students tend to do better on the post-test compared to their pre-test (~20 points). 
@@ -78,7 +78,7 @@ fig= plt.figure(figsize=(30,10))
 sns.boxplot(x='classroom', y='posttest', data=df.sort_values('posttest'))
 ```
 
-<img src="https://i.imgur.com/97kOdK8.png" width=800 alt="class-scores">
+<img src="https://i.imgur.com/97kOdK8.png" width="800" alt="class-scores">
 
 ### Free Lunch Qualification and Gender
 ```python
@@ -88,7 +88,7 @@ sns.boxplot(x='gender', y='posttest', data=df, ax=ax[1])
 ```
 
 
-<img src="https://i.imgur.com/ZjgiOTb.png" width=500 alt="lunch-gender">
+<img src="https://i.imgur.com/ZjgiOTb.png" width="500" alt="lunch-gender">
 
 Just as suspsected, the students who do not qualify for free lunch (most likely more affluent) do better on the post-test. 
 Gender, on the other hand, does not affect the student's test score (as expected).
@@ -100,7 +100,7 @@ sns.regplot(data=df, x='n_student', y='posttest')
 ```
 
 
-<img src="https://i.imgur.com/2VPb3Dd.png" width=500 alt="score-nstudents">
+<img src="https://i.imgur.com/2VPb3Dd.png" width="500" alt="score-nstudents">
 
 
 The more students the classroom has, the worse students tend to do (small negative correlation)
@@ -116,7 +116,7 @@ plt.tight_layout()
 ```
 
 
-<img src="https://i.imgur.com/xhejPlO.png" width=700 alt="triple-bar">
+<img src="https://i.imgur.com/xhejPlO.png" width="700" alt="triple-bar">
 All three features seem to affect student test scores in some way. 
 
 
