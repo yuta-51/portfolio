@@ -10,7 +10,7 @@ On this personal website, I showcase my projects, accomplishments, and skills. M
 ---  
 
 ### Background / Motives
-I was born in Okazaki, Japan and moved to Southern California when I was 3 years old. At 17, I graduated from Palm Desert High School and enrolled into Cal Poly Pomona as a computer engineering student. My interest in computer engineering came from my hobby of building computers. I wanted to know more about the details of what happens inside the components of a computer and how it allows us to do things like surf the web and play video games.  
+I was born in Okazaki, Japan and moved to Southern California when I was 3 years old. At 17, I graduated from Palm Desert High School and enrolled into Cal Poly Pomona as a computer engineering student. My interest in computer engineering came from my hobby of putting together desktop computers. I wanted to know more about the details of what happens inside the components of a computer and how it allows us to do things like surf the web and play video games.  
 
 
 During my four years at Cal Poly, I learned that I discovered my interest in programming and working with data. My final-year project about deep learning showed me how powerful data can be. This sparked my interest in pursuing a career in data. I felt that it would give me a chance to make large, positive impacts with my work, which is something I value heavily. 
