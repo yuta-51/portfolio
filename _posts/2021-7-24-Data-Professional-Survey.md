@@ -205,7 +205,7 @@ avg_salaries = filtered_data.groupby('JobTitle').mean()['SalaryUSD'].to_frame().
 sns.barplot(data = avg_salaries, x='JobTitle', y='SalaryUSD').set(xlabel='Job Title', ylabel='Average Salary (USD)')
 ```
 
-<img src="https://i.imgur.com/n7mAtLK.png" alt="avg-salary-per-job" width="400">
+<img src="https://i.imgur.com/n7mAtLK.png" alt="avg-salary-per-job" width="600">
 
 We know the data is not representative because there were less than 100 respondents who were data scientists. However, based on salaries that I've seen in the past, the data does not seem too far off from the true averages. 
 
@@ -246,13 +246,13 @@ for i, job in enumerate(jobs):
 ax[0].legend(bbox_to_anchor=(0, 1.75), loc='upper left', ncol=1, labels=education['Data Analyst'].index, prop={'size': 15})
 ```
 
-<img src="https://i.imgur.com/EJbpjvk.png" alt="educational-bg" width="400">
+<img src="https://i.imgur.com/EJbpjvk.png" alt="educational-bg-pie-chaqrt" width="800">
 
 The one thing that stands out to me is that a majority of data scientists have a masters degree, while data analysts and data engineers primarily have a bachelors degree. 
 Now, what percentage of these educational backgrounds are computer related? 
 
 
-<img src="https://i.imgur.com/eVwCH5Z.png" alt="educational-bg" width="400">
+<img src="https://i.imgur.com/eVwCH5Z.png" alt="computer-related-pie-chart" width="800">
 
 
 Seems that a majority of data engineers and scientists have an educational background related to computers,while a majority of data analysts dont. Again, since there is a small smaple size in this survey, there may be some bias. 
@@ -297,7 +297,7 @@ for i, job in enumerate(jobs):
 ```
 
 
-<img src="https://i.imgur.com/CGZduWO.png" alt="tasks-pie-chart" width="400">
+<img src="https://i.imgur.com/CGZduWO.png" alt="tasks-pie-chart" width="1000">
 
 
 # Conclusion
