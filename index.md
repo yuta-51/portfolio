@@ -14,10 +14,6 @@ On this personal website, I showcase my projects, accomplishments, and skills. P
 > During my four years at Cal Poly, I discovered my interest in programming and working with data. My final-year project about deep learning showed me how powerful data can be from a business prespective. This sparked my interest in pursuing a career in data. I felt that it would give me a chance to make large, positive impacts with my work, which is something I value heavily. Currently, I am searching for an entry-level softare engineer, data analyst, data engineer, or data scientist position to kick start my career in the field of data. If you are interested in my resume and/or contact information, please keep scrolling down on this page. 
 
 
-### Background & Misc.
-> Greetings! My name is Yuta Akiya and I am 21 years old. I was born in Okazaki, Japan and moved to Southern California when I was 3 years old. At 17, I graduated from Palm      Desert High School and enrolled into Cal Poly Pomona as a computer engineering student. My interest in computer engineering came from my hobby of putting together desktop computers. I wanted to know more about how they allow us to do everyday things like surf the web, display things to our monitors, and run applications.
-
-
 # Education
 ---
 ### California Polytechnic University, Pomona
@@ -67,3 +63,10 @@ On this personal website, I showcase my projects, accomplishments, and skills. P
 # Contact Me 
 ---
 > yutaakiya51(at)gmail(dot)com
+
+
+
+### Background & Misc.
+> Greetings! My name is Yuta Akiya and I am 21 years old. I was born in Okazaki, Japan and moved to Southern California when I was 3 years old. At 17, I graduated from Palm      Desert High School and enrolled into Cal Poly Pomona as a computer engineering student. My interest in computer engineering came from my hobby of putting together desktop computers. I wanted to know more about how they allow us to do everyday things like surf the web, display things to our monitors, and run applications.
+
+
