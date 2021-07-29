@@ -14,7 +14,9 @@ I was born in Okazaki, Japan and moved to Southern California when I was 3 years
 
 
 ### Aspiration
-During my four years at Cal Poly, I learned that I discovered my interest in programming and working with data. My final-year project about deep learning showed me how powerful data can be. This sparked my interest in pursuing a career in data. I felt that it would give me a chance to make large, positive impacts with my work, which is something I value heavily.  
+During my four years at Cal Poly, I discovered my interest in programming and working with data. My final-year project about deep learning showed me how powerful data from a business prespective. This sparked my interest in pursuing a career in data. I felt that it would give me a chance to make large, positive impacts with my work, which is something I value heavily.  
+
+
 Currently, I am searching for an entry-level softare engineer, data analyst, data engineer, or data scientist position to kick start my career in the field of data. If you are interested in my resume and/or contact information, please keep scrolling down on this page. Thank you for visiting!
 
 
