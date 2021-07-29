@@ -222,7 +222,7 @@ job_counts = filtered_data.value_counts().to_frame().reset_index()
 job_counts.plot(kind='bar', x='index', xlabel='', ylabel='Respondents', legend=None)
 ```
 
-<img src="https://i.imgur.com/H79zSaL.png" alt="respondents-per-job" width="500">
+<img src="https://i.imgur.com/H79zSaL.png" alt="respondents-per-job" width="400">
 
 Definitely not enough to make any broad conclusions, especially for data scientists, as the data certainly is not able to represent the entire data community. However, we will still see what insight we can gain from this data. 
 
@@ -236,22 +236,57 @@ avg_salaries = filtered_data.groupby('JobTitle').mean()['SalaryUSD'].to_frame().
 sns.barplot(data = avg_salaries, x='JobTitle', y='SalaryUSD').set(xlabel='Job Title', ylabel='Average Salary (USD)')
 ```
 
-<img src="https://imgur.com/n7mAtLK" alt="avg-salary-per-job" width="500">
+<img src="https://i.imgur.com/n7mAtLK.png" alt="avg-salary-per-job" width="400">
 
 We know the data could be biased because there weren't many respondents who were data scientists. However, this trend, based on my experience with looking at salaries, makes sense. Data scientists tend to have a wide variety of responsibilities and often takes a lot of technical skills involving machine learning. 
 
 
 ### Educational Background
 
+Next, let's check the educational background of people working in each job. To do this, I decided to create 3 separate dataframes and keep them in a dictionary. Then, create three separate pie charts shown in 3 matplotlib axes. To keep the coloring consistent, I also defined a dictionary of colors for each educaitonal background type. 
+
+```python
+education = dict.fromkeys(jobs)
+
+for job in jobs:
+    education[job] = data[data['JobTitle'] == job]['Education'].value_counts().to_frame().drop('Not Asked')
+
+pie, ax = plt.subplots(ncols=3, figsize=[15,6])
+plt.subplots_adjust(hspace=0)
+
+colors = {
+    'Bachelors (4 years)': 'tab:cyan', 
+    'Masters': 'tab:orange',
+    'None (no degree completed)': 'dimgrey',
+    'Associates (2 years)': 'tab:green',
+    'Doctorate/PhD': 'tab:red'
+}
+
+for i, job in enumerate(jobs):
+    education[job].plot(kind='pie', 
+                        y='Education', 
+                        autopct="%.1f%%", 
+                        ax=ax[i], 
+                        legend=False, 
+                        title=job, 
+                        ylabel='', 
+                        colors=[colors[ed] for ed in education[job].index],
+                        fontsize=15,
+                        labels=None)
+ax[0].legend(bbox_to_anchor=(0, 1.75), loc='upper left', ncol=1, labels=education['Data Analyst'].index, prop={'size': 15})
+```
+
+<img src="https://i.imgur.com/EJbpjvk.png" alt="educational-bg" width="400">
+
+The one thing that stands out to me is that a majority of data scientists have a masters degree, while data analysts and data engineers primarily have a bachelors degree. 
+Now, what percentage of these educational backgrounds are computer related? 
 
 
+<img src="https://i.imgur.com/eVwCH5Z.png" alt="educational-bg" width="400">
 
 
+Seems that a majority of data engineers and scientists have an educational background related to computers,while a majority of data analysts dont. Again, since there is a small smaple size in this survey, there may be some bias. 
 
-## Step 4: Visualization
-
-
-## Step 5: Dashboard
 
 
 # Conclusion
