@@ -33,14 +33,14 @@ On this personal website, I showcase my projects, accomplishments, and skills. M
 # Core Skills  
 ---
 ### Python
-> **Data**: Pandas, Numpy
-> - ETL, EDA
-> **Visualization**: Matplotlib, Seaborn 
-> **Machine Learning**: Sklearn, Keras  
-> **Web**: BeautifulSoup, Requests, Flask 
-> - APIs, Web Apps, Web Scraping 
-> **Graphics**: PyGame  
-> **GUIs**: Tkinter  
+> **Data**: Pandas, Numpy  
+> - ETL, EDA  
+> **Visualization**: Matplotlib, Seaborn    
+> **Machine Learning**: Sklearn, Keras    
+> **Web**: BeautifulSoup, Requests, Flask   
+> - APIs, Web Apps, Web Scraping   
+> **Graphics**: PyGame    
+> **GUIs**: Tkinter    
 
 
 
