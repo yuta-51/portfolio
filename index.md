@@ -25,7 +25,7 @@ On this personal website, I showcase my projects, accomplishments, and skills. M
 > 3.66 / 4.0 GPA  
 
 
-### Google Professional Data Analytics
+### Google Professional Data Analytics Certificate
 > 98% Overall Grade  
 > Covered and Practiced Data Cleaning, Analysis, and Visualization
 
@@ -33,20 +33,28 @@ On this personal website, I showcase my projects, accomplishments, and skills. M
 # Core Skills  
 ---
 ### Python
-> **Data**: Numpy, Pandas, Matplotlib  
-> **Machine Learning**: Sklearn  
+> **Data**: Pandas, Numpy
+> **Visualization**: Matplotlib, Seaborn 
+> **Machine Learning**: Sklearn, Keras  
 > **Web**: BeautifulSoup, Requests, Flask  
-> **Graphics**: PyGame  
+> **Graphics**: PyGame
+> **GUIs**: Tkinter  
 
 
 ### SQL
 > Experience through various projects and coursework  
-> Intermediate to Advanced DDL and DML
+> Both relational and distributed databases
+> MySQL, PostgreSQL, SparkSQL
 
 
 ### Spreadsheets
-> Excel  
-> Google Sheets
+> Data cleaning, Functions, Pivot Tables, VLOOKUP, Graphs
+> Proficient in both Excel and Google Sheets
+
+
+### Tableau
+> Experience through coursework
+> Graphs, Dashboards
 
 
 # Resumé
