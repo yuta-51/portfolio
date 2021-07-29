@@ -205,7 +205,45 @@ data.rename(columns={"Survey Year": "SurveyYear"}, inplace=True)
 
 
 ## Step 3: EDA
-Now that our data is cleaned, it is ready to be analyzed. Let's go back to our main goal: to look for differences between data analysts, sciensists, and engineers in terms of various metrics. 
+Now that our data is cleaned, it is ready to be analyzed. Let's go back to our main goal: to look for differences between data analysts, sciensists, and engineers in terms of various metrics. We will go through each metric and create a visualization to better understand it!
+
+### Overview
+
+Let's first look at how many people of each job type actually took this survey. Since the survey data showed Data Analysts as 'Analyst' and Data Engineer as 'Engineer', we quickly substitute those with their full job title. We can also create a separate dataframe which is the original dataframe but filtered so that only the jobs we are looking at are shown. We will be using this filtered version of the dataframe repeatedly throughout the EDA. 
+
+```python
+jobs = ['Data Analyst', 'Data Engineer', 'Data Scientist']
+
+data['JobTitle'] = data['JobTitle'].str.replace('Analyst','Data Analyst').replace('Engineer', 'Data Engineer')
+
+filtered_data = data[(data['JobTitle'] =='Data Analyst') | (data['JobTitle'] =='Data Engineer')| (data['JobTitle'] =='Data Scientist')]['JobTitle']
+
+job_counts = filtered_data.value_counts().to_frame().reset_index()
+job_counts.plot(kind='bar', x='index', xlabel='', ylabel='Respondents', legend=None)
+```
+
+<img src="https://i.imgur.com/H79zSaL.png" alt="respondents-per-job" width="500">
+
+Definitely not enough to make any broad conclusions, especially for data scientists, as the data certainly is not able to represent the entire data community. However, we will still see what insight we can gain from this data. 
+
+
+### Salary
+
+Let's look at the average salary for each job.
+
+```python
+avg_salaries = filtered_data.groupby('JobTitle').mean()['SalaryUSD'].to_frame().reset_index()
+sns.barplot(data = avg_salaries, x='JobTitle', y='SalaryUSD').set(xlabel='Job Title', ylabel='Average Salary (USD)')
+```
+
+<img src="https://imgur.com/n7mAtLK" alt="avg-salary-per-job" width="500">
+
+We know the data could be biased because there weren't many respondents who were data scientists. However, this trend, based on my experience with looking at salaries, makes sense. Data scientists tend to have a wide variety of responsibilities and often takes a lot of technical skills involving machine learning. 
+
+
+### Educational Background
+
+
 
 
 
