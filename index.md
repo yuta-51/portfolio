@@ -6,7 +6,7 @@ layout: about
 ---
 ### Summary
 Greetings! My name is Yuta Akiya and I am a computer engineering graduate seeking job opportunities in the field of data.
-On this personal website, I showcase my projects, accomplishments, and skills. My resume and contact information are towards the bottom of this page. Thank you for visiting!
+On this personal website, I showcase my projects, accomplishments, and skills. My resume and contact information are towards the bottom of this page. Thank you for visiting!  
 ---  
 
 ### Background
