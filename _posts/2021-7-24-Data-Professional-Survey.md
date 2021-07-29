@@ -312,7 +312,7 @@ def get_task_counts(job_title):
     return pd.DataFrame.from_dict(tasks_total, orient='index', columns=['Count']).drop(['Not Asked'], axis=0).sort_values('Count', ascending=False)
 ```
 
-Now, we can use this function to, again, create three separate dataframes for each job type and plot them in a matplotlib subplot.
+Now, we can use this function to, again, create a separate dataframe for each job type and plot them in a matplotlib subplot.
 
 
 ```python
@@ -332,3 +332,10 @@ for i, job in enumerate(jobs):
 
 
 # Conclusion
+Some insights that we found through EDA (w/ assumptions mentioned in the "goal" section):
+- Data Analysts are, on average, paid the least out of the three.
+- A majority of data analysts and data engineers have a bachelor's degrees.
+- A majority of data scientists have a master's degrees.
+- Most data analysts have non-computer related backgrounds.
+- Task distribution for each job type through visualization. 
+
