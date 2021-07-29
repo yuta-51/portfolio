@@ -4,12 +4,12 @@ layout: about
 
 # About Me
 ---
-### Summary 
-Greetings! My name is Yuta Akiya and I am a computer engineering graduate seeking job opportunities in the field of data. 
+### Summary
+Greetings! My name is Yuta Akiya and I am a computer engineering graduate seeking job opportunities in the field of data.
 On this personal website, I showcase my projects, accomplishments, and skills. My resume and contact information are towards the bottom of this page. Thank you for visiting!
 ---  
 
-### Background 
+### Background
 I was born in Okazaki, Japan and moved to Southern California when I was 3 years old. At 17, I graduated from Palm Desert High School and enrolled into Cal Poly Pomona as a computer engineering student. My interest in computer engineering came from my hobby of putting together desktop computers. I wanted to know more about the details of what happens inside the components of a computer and how it allows us to do things like surf the web and play video games.  
 
 
