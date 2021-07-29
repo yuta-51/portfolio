@@ -35,7 +35,7 @@ On this personal website, I showcase my projects, accomplishments, and skills. P
 > **Web**: BeautifulSoup, Requests, Flask   
 > **Graphics**: PyGame    
 > **GUIs**: Tkinter    
-> APIs, Desktop Applications, EDA, ETL, Visualization, Web Scraping  
+> APIs, Desktop Applications, EDA, ETL, OOP, Visualization, Web Scraping  
 
 
 
