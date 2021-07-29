@@ -57,7 +57,7 @@ On this personal website, I showcase my projects, accomplishments, and skills. P
 
 # Resume
 ---
-> <a href="" download>Download Resume</a>
+> <a href="assets/files/resume.pdf" download>Download Resume</a>
 
 
 # Contact Me 
