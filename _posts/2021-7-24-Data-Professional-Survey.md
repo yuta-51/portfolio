@@ -238,10 +238,11 @@ sns.barplot(data = avg_salaries, x='JobTitle', y='SalaryUSD').set(xlabel='Job Ti
 
 <img src="https://i.imgur.com/n7mAtLK.png" alt="avg-salary-per-job" width="400">
 
-We know the data could be biased because there weren't many respondents who were data scientists. However, this trend, based on my experience with looking at salaries, makes sense. Data scientists tend to have a wide variety of responsibilities and often takes a lot of technical skills involving machine learning. 
+We know the data is not representative because there were less than 100 respondents who were data scientists. However, based on salaries that I've seen in the past, the data does not seem too far off from the true averages. 
 
 
 ### Educational Background
+
 
 Next, let's check the educational background of people working in each job. To do this, I decided to create 3 separate dataframes and keep them in a dictionary. Then, create three separate pie charts shown in 3 matplotlib axes. To keep the coloring consistent, I also defined a dictionary of colors for each educaitonal background type. 
 
@@ -287,6 +288,47 @@ Now, what percentage of these educational backgrounds are computer related?
 
 Seems that a majority of data engineers and scientists have an educational background related to computers,while a majority of data analysts dont. Again, since there is a small smaple size in this survey, there may be some bias. 
 
+### Duties
+There is a column in the original dataset which lists a number of the tasks performed (duties) of each respondent. The format is in comma separated string format, where each task is separated by commas. 
+
+
+<img src="https://i.imgur.com/OCQs5cL.jpg" alt="tasks-entries" width="400">
+
+Due to the consistency of each entry, it was determined that the survey question was a checklist question where rspondents chose a number of options from a checklist, and the survey turned their response into a comma-separated string. 
+To analyze the distribution tasks that each job title has, we will split the column entries into lists. Let's define a function that will help us count up the amount of respondents with each role called ```get_task_counts```. Each respondent can have multiple since the entry is a list of strings.
+
+```python
+def get_task_counts(job_title):
+    tasks_total = {}
+    for row in data[(data['JobTitle']==job_title) & (data['KindsOfTasksPerformed'] != np.nan)]['KindsOfTasksPerformed']:
+        if isinstance(row, str):
+            tasks = row.split(', ')
+        for task in tasks:
+            if task not in tasks_total.keys():
+                tasks_total[task] = 1
+            else:
+                tasks_total[task] += 1
+    
+    return pd.DataFrame.from_dict(tasks_total, orient='index', columns=['Count']).drop(['Not Asked'], axis=0).sort_values('Count', ascending=False)
+```
+
+Now, we can use this function to, again, create three separate dataframes for each job type and plot them in a matplotlib subplot.
+
+
+```python
+pie, ax = plt.subplots(ncols=3, figsize=[20,6])
+for i, job in enumerate(jobs):
+    get_task_counts(job).plot(kind='pie', 
+                              y='Count', 
+                              autopct="%.1f%%", 
+                              ax=ax[i], 
+                              legend=False, 
+                              title=job, 
+                              ylabel='')
+```
+
+
+<img src="https://i.imgur.com/CGZduWO.png" alt="tasks-pie-chart" width="400">
 
 
 # Conclusion
