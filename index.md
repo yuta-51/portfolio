@@ -67,6 +67,6 @@ On this personal website, I showcase my projects, accomplishments, and skills. P
 
 
 ### Background & Misc.
-> Greetings! My name is Yuta Akiya and I am 21 years old. I was born in Okazaki, Japan and moved to Southern California when I was 3 years old. At 17, I graduated from Palm      Desert High School and enrolled into Cal Poly Pomona as a computer engineering student. My interest in computer engineering came from my hobby of putting together desktop computers. I wanted to know more about how they allow us to do everyday things like surf the web, display things to our monitors, and run applications.
+> Greetings! My name is Yuta Akiya and I am 21 years old. I was born in Okazaki, Japan and moved to Southern California when I was 3 years old. During grade school, I played a total of 9 years of baseball including travel and high school level play. At 17, I graduated from Palm Desert High School and enrolled into Cal Poly Pomona as a computer engineering student. My interest in computer engineering came from my hobby of putting together desktop computers. I wanted to know more about how they allow us to do everyday things like surf the web, display things to our monitors, and run applications. 
 
 
