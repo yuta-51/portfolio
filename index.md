@@ -40,8 +40,8 @@ On this personal website, I showcase my projects, accomplishments, and skills. P
 
 
 ### SQL
-> Experience through various projects and coursework    
-> Both relational and distributed databases  
+> Experience through various projects and coursework  
+> Experience querying big data via. Databricks& Spark SQL
 > MySQL, PostgreSQL, SparkSQL  
 
 
