@@ -41,8 +41,8 @@ On this personal website, I showcase my projects, accomplishments, and skills. P
 
 ### SQL
 > Experience through various projects and coursework  
-> Experience querying big data via. Databricks& Spark SQL
-> MySQL, PostgreSQL, SparkSQL  
+> Experience querying big data via. Databricks & Spark SQL  
+> Experience using MySQL, PostgreSQL, SparkSQL  
 
 
 ### Spreadsheets
