@@ -6,12 +6,12 @@ layout: about
 ---
 
 ### Summary
-> I am a computer engineering graduate seeking job opportunities in the field of data.
-On this personal website, I showcase my projects, accomplishments, and skills. Please use the navigation bar on the top right of the page to see my projects or go towards the bottom of this page for my resume and contact information. 
+> Hello! I am a recent computer engineering graduate seeking job opportunities in the field of data.
+This is a personal website where I showcase my projects, accomplishments, and skills. Please use the navigation bar on the top right of the page to see my projects or go towards the bottom of this page for my resume and contact information. Thank you for visiting!
 
 
 ### Aspiration
-> During my four years at Cal Poly, I discovered my interest in programming and working with data. My final-year project about deep learning showed me how powerful data can be from a business prespective. This sparked my interest in pursuing a career in data. I felt that it would give me a chance to make large, positive impacts with my work, which is something I value heavily. Currently, I am searching for an entry-level software engineer, data analyst, data engineer, or data scientist position to kick start my career in the field of data. If you are interested in my resume and/or contact information, please keep scrolling down on this page. 
+> During my four years pursuing an degree in computer engineering, I discovered my interest in programming and working with data. My final-year project about deep learning showed me how powerful data can be from a business prespective. This sparked my interest in pursuing a career in data. I felt that it would give me a chance to make large, positive impacts with my work, which is something I value heavily. Currently, I am searching for an entry-level software engineer, data analyst, data engineer, or data scientist position to kick start my career in the field of data. If you are interested in my resume and/or contact information, please keep scrolling down on this page. 
 
 
 # Education
@@ -66,7 +66,7 @@ On this personal website, I showcase my projects, accomplishments, and skills. P
 
 
 
-### Background & Misc.
-> Greetings! My name is Yuta Akiya and I am 21 years old. I was born in Okazaki, Japan and moved to Southern California when I was 3 years old. During grade school, I played a total of 9 years of baseball including travel and high school level play. At 17, I graduated from Palm Desert High School and enrolled into Cal Poly Pomona as a computer engineering student. My interest in computer engineering came from my hobby of putting together desktop computers. I wanted to know more about how they allow us to do everyday things like surf the web, display things to our monitors, and run applications. 
+# Background & Misc.
+> My name is Yuta Akiya and I am 21 years old. I was born in Okazaki, Japan and moved to Southern California when I was 3 years old. During grade school, I played a total of 9 years of baseball including travel and high school level play. At 17, I graduated from Palm Desert High School and enrolled into Cal Poly Pomona as a computer engineering student. My interest in computer engineering came from my hobby of putting together desktop computers. I wanted to know more about how they allow us to do everyday things like surf the web, display things to our monitors, and run applications. I graduated from Cal Poly in May of 2021 and, since then, have been looking for entry-level or intern positions in a technical, data-related role. 
 
 
