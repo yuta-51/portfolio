@@ -11,7 +11,7 @@ This is a personal website where I showcase my projects, accomplishments, and sk
 
 
 ### Aspiration
-> During my four years pursuing an degree in computer engineering, I discovered my interest in programming and working with data. My final-year project about deep learning showed me how powerful data can be from a business prespective. This sparked my interest in pursuing a career in data. I felt that it would give me a chance to make large, positive impacts with my work, which is something I value heavily. Currently, I am searching for an entry-level software engineer, data analyst, data engineer, or data scientist position to kick start my career in the field of data. If you are interested in my resume and/or contact information, please keep scrolling down on this page. 
+> During my four years pursuing an degree in computer engineering, I discovered my interest in programming and working with data. My final-year project about deep learning showed me how powerful data can be from a business prespective and as how much I enjoy working with data. This sparked my interest in pursuing a career in data. I felt that it would give me a chance to make large, positive impacts with my work, which is something I value heavily. It also aligns with me passion and interest of handling data. Currently, I am searching for an entry-level software engineer, data analyst, data engineer, or data scientist position to kick start my career. If you are interested in my resume and/or contact information, please keep scrolling down on this page. 
 
 
 # Education
