@@ -11,7 +11,7 @@ thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Apache_Spar
 To showcase some SQL queries written as coursework in the DataBricks Apache Spark SQL for Data Analysts course on Coursera.
 
 
-## Filtering Array Data to Create Flags
+## Filtering Array Data 
 This problem deals with a mock data set from a group of data centers collecting sensor data (co2 levels, temperature, battery level). The co2 levels are captured as arrays, as measurements are taken multiple times a day but data is sent daily. This query shows all decvice IDs which have a CO2 level higher than 1400 in any of their readings using the FILTER function.
 
 ```sql
