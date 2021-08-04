@@ -10,12 +10,11 @@ thumbnail: https://files.usef.org/assets/f4tsB1ysiAU/healthinsuranceiconmental-h
 # Goal 
 To clean and gather insights from raw survey data which pertains to employees' mental health in the tech industry. 
 Mental health is a serious issue that has been looked over by many until recently. 
-It is important to explore survey data to gain insights on what kind of people are more likely to suffer from mental health issues as well as how we can help them. 
+It is important to explore survey data to gain insights on what kind of people are more likely to not get help with their mental health issues as well as what companies can do to help their employees. 
 
 
 # Tools
 - MS Excel 
-- Tableau 
 
 
 # Procedure
@@ -73,8 +72,34 @@ This column indicates whether the respondent has had any experience with mental 
 ```
 
 
-### 
+### ```no_treatment_despite_interfere```
+Another boolean column which is marked ```Yes``` is the respondent experiences interference at work from mental health conditions but have not sought to get treatment. 
 
+
+```
+=IF(AND(J2="No",NOT(OR(K2="NA",K2="Never"))),"Yes","No")
+```
+
+
+The rest of the columns (other than ```comments```) seem to not be free response, so we don't have to worry as much about cleaning them. 
+
+
+
+## Step 4: EDA using Pivot Tables
+
+Most important insights gained from this project: 
+
+
+**% of Respondents Who Have Experienced Mental Health Issues:**
+> 64.83 %
+
+
+**% of Respondents Who Have Experienced Mental Health Issues and Have a Family History of Mental Health Issues:**
+> 86%
+
+
+**% Of Respondents Who Have Experienced Mental Health Issues but Have Not Gotten Any Treatment:**
+> 16.69%
 
 
 
