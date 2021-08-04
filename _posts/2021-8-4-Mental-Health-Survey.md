@@ -38,23 +38,42 @@ Next we will clean the data so we can explore the data and answer our questions.
 ## Step 3: Cleaning
 As the data is only ~ 1200 rows, using Excel to clean is practical. Each action taken towards cleaning the data will be logged here.
 
-## Removing Outliers 
+### Removing Outliers 
 - Removed rows where the age was negative, < 11,  or > 300. Total of 8 rows removed. 
 
 
-## Inconsistent Data Types
+### Inconsistent Data Types
 - The ```no_employees``` column had a mix of strings and dates for some reason. We only want the string so a formula, ```=IF(ISNUMBER(K1241), "Unknown", K1241)```, was used to 
 replace the dates with "Unknown". 
 
 
-## Inconsistent String Format
-- The ```gender``` column was a free-response question so the formatting was very inconsistent. To simplify the process, I divided the responses into Male, Female, and Non-Binary. The formula I created is essentially a nested IF statement which checks for "female", "f", "male", and "m" to identify males and females. If the user responded with anything else, it would be marked non-binary. The response, "woman" was replaced with female to avoid having to include an extra check in the formula. 
+### Inconsistent String Format
+- The ```gender``` column was a free-response question so the formatting was very inconsistent. To simplify the process, I divided the responses into Male, Female, and Non-Binary. The formula I created is essentially a nested IF statement which checks for "female", "f", "male", and "m" to identify males and females. If the user responded with anything else, it would simply carry over their original response, as it is impossible to include checks for all genders. The response, "woman" and "man" was replaced with female/male to avoid having to include an extra check in the formula using find and replace. Also, it is important to trim the response to remove all extra spaces. 
 
-```=IF(OR( EXACT("female",TRIM(LOWER(D1218))), EXACT("f",TRIM( LOWER(D1218)))), "Female", IF(OR( EXACT("male",TRIM(LOWER(D1218))), EXACT("m", TRIM(LOWER(D1218)))), "Male", "Non-binary" ))```
+```
+=IF(OR(EXACT("female",TRIM(LOWER(D2))),EXACT("f",TRIM( LOWER(D2)))),"Female",IF(OR(EXACT("male",TRIM(LOWER(D2))),EXACT("m", TRIM(LOWER(D2)))),"Male",TRIM(D2)))
+```
+
 
 The formula used looks long and scary but it is just checking if a formatted version of the original string matches with a one of the search strings. 
-Some manual changes were made as well for small typos. 
+Some manual changes were made as well for small typos. This is a sample of the original and cleaned version of the gender column. 
 
+
+<img src="https://i.imgur.com/Afjkt9B.jpg" alt="gender-column" width="300"> 
+
+
+## Step 4: Feature Engineering
+
+### ```has_experience```
+This column indicates whether the respondent has had any experience with mental health conditions. The value of this column is ```Yes``` if they have been treated for mental health problems or have had their work interfered by their mental health. Otherwise, it is a ```No```. A simple formula which reads values from the ```treatment``` and ```work_interfere``` columns and applies logic to it in an IF statement is made. 
+
+
+```
+=IF( OR(I2="Yes", NOT( OR(J2="NA", J2="Never"))), "Yes", "No")
+```
+
+
+### 
 
 
 
