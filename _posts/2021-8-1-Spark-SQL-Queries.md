@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Advanced Spark SQL Queries"
+title:  "Spark SQL Queries"
 info: "A collection of Spark SQL queries written for an Apache Spark course."
 tech: "Spark SQL"
 type: Coursework
