@@ -36,4 +36,27 @@ Overall, there are many questions that ask about how mental health is viewed/dea
 Next we will clean the data so we can explore the data and answer our questions.
 
 ## Step 3: Cleaning
-As the data is only ~ 1200 rows, using Excel to clean is practical. 
+As the data is only ~ 1200 rows, using Excel to clean is practical. Each action taken towards cleaning the data will be logged here.
+
+## Removing Outliers 
+- Removed rows where the age was negative, < 11,  or > 300. Total of 8 rows removed. 
+
+
+## Inconsistent Data Types
+- The ```no_employees``` column had a mix of strings and dates for some reason. We only want the string so a formula, ```=IF(ISNUMBER(K1241), "Unknown", K1241)```, was used to 
+replace the dates with "Unknown". 
+
+
+## Inconsistent String Format
+- The ```gender``` column was a free-response question so the formatting was very inconsistent. To simplify the process, I divided the responses into Male, Female, and Non-Binary. The formula I created is essentially a nested IF statement which checks for "female", "f", "male", and "m" to identify males and females. If the user responded with anything else, it would be marked non-binary. The response, "woman" was replaced with female to avoid having to include an extra check in the formula. 
+
+```=IF(OR( EXACT("female",TRIM(LOWER(D1218))), EXACT("f",TRIM( LOWER(D1218)))), "Female", IF(OR( EXACT("male",TRIM(LOWER(D1218))), EXACT("m", TRIM(LOWER(D1218)))), "Male", "Non-binary" ))```
+
+The formula used looks long and scary but it is just checking if a formatted version of the original string matches with a one of the search strings. 
+Some manual changes were made as well for small typos. 
+
+
+
+
+
+
