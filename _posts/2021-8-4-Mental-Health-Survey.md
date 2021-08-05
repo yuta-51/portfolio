@@ -117,11 +117,21 @@ So a third of companies offer mental health benefits. This is definitely an issu
 > Unlikely: 19%
 
 
-The employees' willingless to talk about their mental health with coworkers strongly affects the chance of them experiencing mental heal issues (More than double the percentage when comapring likely to unlikely).
+**% of Respondents Who Experience Mental Health Issues Based on How Likely They Are to Talk to Their Supervisors About Their Mental Health:**
+> Likely: 11%          
+> Somewhat Likely: 15%    
+> Unlikely: 17%
+
+
+The employees' willingless to talk about their mental health with coworkers/supervisors strongly affects the chance of them experiencing mental heal issues (More than double the percentage when comapring likely to unlikely).
 
 
 **% Of People Who Would Talk About their Mental Health Issues with an Employer in an Interview:**	
 > 3%
+
+
+Almost nobody would talk to their employer about their mental health most likley because they see it as a disadvantage and something that would be frowned upon.
+
 
 
 **% Of People Who Don't Get their Mental Health Issues Checked Based on Whether or Not Company Respects their Anonymity when Offering Mental Help:**
@@ -132,7 +142,15 @@ The employees' willingless to talk about their mental health with coworkers stro
 More than double the percentage of people do not get help with their mental health when the company resources do not respect their employees' anonymity.
 
 
-## Step 5: Recommendations to Employees & Companies
+# Recommendations 
+
+- **Create an environment where people can talk about their mental health openly**. More people need to know about it and respect it. We saw that employee being able to talk about their mental health with their coworkers/supervisors helps tremendously. When the entire company knows about and can understand the seriousness of mental health issues, it will create a more inclusive and comfortable environment, allowing more people to speak out on their mental health issues.
+- **Fix the stigma around mental health through educating employees through a wellness program**. Only 3% of respondents said that they would talk about their mental health issues with an employer. There is clearly a stigma around mental health which makes it harder for people to talk about their issues openly.
+- **Offer help while respecting employees' anonymity***. Just talking and knowing about mental health helps, but at some point people will need profressional help. Companies should offer this profressional help to all employees and also respect their anonymity while helping them. We saw that people are twice more likley to not get their mental health checked when their company does not respect their anonymity. 
+
+
+
+
 
 
 
