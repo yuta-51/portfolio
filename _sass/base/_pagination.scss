@@ -1,5 +1,5 @@
 .pagination {
-  border-top: .5px solid $grey-2;
+  border-top: .5px solid #333;
   font-family: $sans-serif;
   padding-top: 2rem;
   position: relative;
@@ -23,7 +23,7 @@
 
   .next {
     @include transition(all .3s ease-out);
-    color: $default-color;
+    color: #333;
     font-size: 2rem;
     position: absolute;
 
