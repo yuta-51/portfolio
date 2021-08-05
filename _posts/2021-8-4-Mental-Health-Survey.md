@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Mental Health in Tech Survey Analysis"
+title:  "Mental Health Survey Analysis"
 info: "An EDA project on raw survey data using Excel."
 tech: "MS Excel"
 type: Project
