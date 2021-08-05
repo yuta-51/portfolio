@@ -94,13 +94,23 @@ Most important insights gained from this project:
 > 64.83 %
 
 
+
+
 **% of Respondents Who Have Experienced Mental Health Issues and Have a Family History of Mental Health Issues:**
 > 86%
 
 
-**% Of Respondents Who Have Experienced Mental Health Issues but Have Not Gotten Any Treatment:**
-> 16.69%
+Most respondents who have experienced mental health issues have a family history of mental health issues. 
 
 
+**Does The Respondent's Company Provide Mental Health Benefits?:**
+> Yes: 37.81 %
+> No: 29.66 %
+> Don't Know: 32.53 %
 
+
+So a third of companies offer mental health benefits. This is definitely an issue, but something else I see is that a third of the people don't even know if they have mental health benefits! This supports the view that not enough people even know about or care about peoples' mental health (including themselves).  
+
+
+**% of Respondents Who Experience Mental Health Issues But Get No Treatment While 
 
