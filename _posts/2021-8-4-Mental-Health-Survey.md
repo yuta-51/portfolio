@@ -85,14 +85,13 @@ The rest of the columns (other than ```comments```) seem to not be free response
 
 
 
-## Step 4: EDA using Pivot Tables
+## Step 4: Insight using Pivot Tables
 
 Most important insights gained from this project: 
 
 
 **% of Respondents Who Have Experienced Mental Health Issues:**
 > 64.83 %
-
 
 
 
@@ -112,5 +111,29 @@ Most respondents who have experienced mental health issues have a family history
 So a third of companies offer mental health benefits. This is definitely an issue, but something else I see is that a third of the people don't even know if they have mental health benefits! This supports the view that not enough people even know about or care about peoples' mental health (including themselves).  
 
 
-**% of Respondents Who Experience Mental Health Issues But Get No Treatment While 
+**% of Respondents Who Experience Mental Health Issues Based on How Likely They Are to Talk to Their Coworkers About Their Mental Health:**
+> Likely: 9%           
+> Somewhat Likely: 14%    
+> Unlikely: 19%
+
+
+The employees' willingless to talk about their mental health with coworkers strongly affects the chance of them experiencing mental heal issues (More than double the percentage when comapring likely to unlikely).
+
+
+**% Of People Who Would Talk About their Mental Health Issues with an Employer in an Interview:**	
+> 3%
+
+
+**% Of People Who Don't Get their Mental Health Issues Checked Based on Whether or Not Company Respects their Anonymity when Offering Mental Help:**
+> Respects their anonymity when assisting them:	9%
+> Does not respect their anonymity when assisting them:	20%
+
+
+More than double the percentage of people do not get help with their mental health when the company resources do not respect their employees' anonymity.
+
+
+## Step 5: Recommendations to Employees & Companies
+
+
+
 
