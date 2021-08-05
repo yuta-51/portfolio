@@ -103,24 +103,24 @@ Most respondents who have experienced mental health issues have a family history
 
 
 **Does The Respondent's Company Provide Mental Health Benefits?:**
-> Yes: 37.81 %
-> No: 29.66 %
-> Don't Know: 32.53 %
+> Yes: 37.81 %  
+> No: 29.66 %  
+> Don't Know: 32.53 %  
 
 
 So a third of companies offer mental health benefits. This is definitely an issue, but something else I see is that a third of the people don't even know if they have mental health benefits! This supports the view that not enough people even know about or care about peoples' mental health (including themselves).  
 
 
 **% of Respondents Who Experience Mental Health Issues Based on How Likely They Are to Talk to Their Coworkers About Their Mental Health:**
-> Likely: 9%           
-> Somewhat Likely: 14%    
-> Unlikely: 19%
+> Likely: 9%             
+> Somewhat Likely: 14%      
+> Unlikely: 19%  
 
 
 **% of Respondents Who Experience Mental Health Issues Based on How Likely They Are to Talk to Their Supervisors About Their Mental Health:**
-> Likely: 11%          
-> Somewhat Likely: 15%    
-> Unlikely: 17%
+> Likely: 11%            
+> Somewhat Likely: 15%        
+> Unlikely: 17%  
 
 
 The employees' willingless to talk about their mental health with coworkers/supervisors strongly affects the chance of them experiencing mental heal issues (More than double the percentage when comapring likely to unlikely).
@@ -135,8 +135,8 @@ Almost nobody would talk to their employer about their mental health most likley
 
 
 **% Of People Who Don't Get their Mental Health Issues Checked Based on Whether or Not Company Respects their Anonymity when Offering Mental Help:**
-> Respects their anonymity when assisting them:	9%
-> Does not respect their anonymity when assisting them:	20%
+> Respects their anonymity when assisting them:	9%    
+> Does not respect their anonymity when assisting them:	20%    
 
 
 More than double the percentage of people do not get help with their mental health when the company resources do not respect their employees' anonymity.
