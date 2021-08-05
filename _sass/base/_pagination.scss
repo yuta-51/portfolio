@@ -24,7 +24,7 @@
   .next {
     @include transition(all .3s ease-out);
     color: #333;
-    font-size: 2rem;
+    font-size: 10rem;
     position: absolute;
 
     &:hover,
