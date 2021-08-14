@@ -63,7 +63,7 @@ Some manual changes were made as well for small typos. This is a sample of the o
 
 ## Step 4: Feature Engineering
 
-### ```has_experience```
+### has_experience
 This column indicates whether the respondent has had any experience with mental health conditions. The value of this column is ```Yes``` if they have been treated for mental health problems or have had their work interfered by their mental health. Otherwise, it is a ```No```. A simple formula which reads values from the ```treatment``` and ```work_interfere``` columns and applies logic to it in an IF statement is made. 
 
 
@@ -72,7 +72,7 @@ This column indicates whether the respondent has had any experience with mental 
 ```
 
 
-### ```no_treatment_despite_interfere```
+### no_treatment_despite_interfere
 Another boolean column which is marked ```Yes``` is the respondent experiences interference at work from mental health conditions but have not sought to get treatment. 
 
 
@@ -146,7 +146,7 @@ More than double the percentage of people do not get help with their mental heal
 
 - **Create an environment where people can talk about their mental health openly**. More people need to know about it and respect it. We saw that employee being able to talk about their mental health with their coworkers/supervisors helps tremendously. When the entire company knows about and can understand the seriousness of mental health issues, it will create a more inclusive and comfortable environment, allowing more people to speak out on their mental health issues.
 - **Fix the stigma around mental health through educating employees through a wellness program**. Only 3% of respondents said that they would talk about their mental health issues with an employer. There is clearly a stigma around mental health which makes it harder for people to talk about their issues openly.
-- **Offer help while respecting employees' anonymity***. Just talking and knowing about mental health helps, but at some point people will need profressional help. Companies should offer this profressional help to all employees and also respect their anonymity while helping them. We saw that people are twice more likley to not get their mental health checked when their company does not respect their anonymity. 
+- **Offer help while respecting employees' anonymity**. Just talking and knowing about mental health helps, but at some point people will need profressional help. Companies should offer this profressional help to all employees and also respect their anonymity while helping them. We saw that people are twice more likley to not get their mental health checked when their company does not respect their anonymity. 
 
 
 
