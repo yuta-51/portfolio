@@ -126,10 +126,27 @@ trip_df.to_csv('./output/trip_data.csv')
 
 
 ## 4. Think of comparative metrics
-Let's refer back to our original goal: to find behavioral differneces between members and non-members. Here are some methods of comparison that I thought of.
+Let's refer back to our original goal: to find behavioral differneces between members and non-members. Here are some methods of comparison that I thought of:
+1. Total rides at each hour of the day
+2. Total rides on each day of the week
+3. Top routes (start/end station) taken
+4. Percentage of ride where start/end station are the same
+5. Average ride duration
 
-- 
 
 ## 5. Dashboard
+Implementing each comparison as a table, chart, or graph in Tableau, our final dashbaord is complete. This dashboard aims to compare the differences between how members and non-members use the bike share service and how these differences can turn into insights to drive new marketing strategies for the company. 
 The final dashboard can be seen [here](https://public.tableau.com/views/BikeShare_16295803525410/Dashboard?:language=en-US&:display_count=n&:origin=viz_share_link) on my Tableau profile. 
 
+
+## 6. Insights
+1. Members tend to start riding earlier in the day compared to non-members most likely to commute to work or school. 
+2. The number of non-member rides exceed the number of member rides only on the weekend.
+3. Non-members tend to rent and return bikes on at the same station.
+    - Notably, stations at "Streeter Dr & Grand Ave" and "Lake Shore Dr & Monroe Street" are the most popular among non-members.
+
+Based on these data-driven insights, the broad trend seems to be that there are more member rides because members tend to use Cyclistic to commute to work or school. However, when it comes to sight seeing or getting by on the weekend, there are more non-member riders. To convert the non-members to members, the company should insentivie using their bikes to commute to work/school. 
+
+## 7. Strategy
+Based on the 3 main insights, we can come up with a broad marketing strategy outline.
+> Insentivize using Cyclistic to commute to school or work (student discount? partnerships?). During the weekend, advertise the bike-share service at the most popular stations for non-members. 
