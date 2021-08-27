@@ -6,12 +6,11 @@ layout: about
 ---
 
 ### Summary
-> Hello! I am a recent computer engineering graduate seeking job opportunities in the field of data.
-This is a personal website where I showcase my projects, accomplishments, and skills. Please use the navigation bar on the top right of the page to see my projects or go towards the bottom of this page for my resume and contact information. Thank you for visiting!
+> Hi! My name is Yuta and I'm a recent computer engineering graduate who is interested in working in the field of data. This is a personal website where I showcase my projects, accomplishments, and skills. Please use the navigation bar on the top right to see my projects, or go towards the bottom of this page to see my resume and contact information. Thank you for visiting!
 
 
 ### Aspiration
-> During my four years pursuing an degree in computer engineering, I discovered my interest in programming and working with data. My final-year project about deep learning showed me how powerful data can be from a business prespective and as how much I enjoy working with data. This sparked my interest in pursuing a career in data. I felt that it would give me a chance to make large, positive impacts with my work, which is something I value heavily. It also aligns with me passion and interest of handling data. Currently, I am searching for an entry-level software engineer, data analyst, data engineer, or data scientist position to kick start my career. If you are interested in my resume and/or contact information, please keep scrolling down on this page. 
+> During my four years pursuing an degree in computer engineering, I discovered my passion for programming and working with data. My final-year project about deep learning showed me how powerful data can be from a business prespective. This sparked my interest in pursuing a career in data. Currently, I am searching for an entry-level data analyst position to kick start my career. If you are interested in seeing my resume and/or contact information, please go towards the bottom of this page. 
 
 
 # Education
