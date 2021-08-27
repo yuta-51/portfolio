@@ -20,9 +20,16 @@ layout: about
 > 3.66 / 4.0 GPA  
 
 
-### Google Professional Data Analytics Certificate
-> 98% Overall Grade  
+# Certificates 
+---
+### Google Professional Data Analytics 
+> Grade: 98% 
 > Covered and Practiced Data Cleaning, Analysis, and Visualization
+
+
+### Apache Spark SQL for Data Analysts
+>  Grade: 96.7% 
+>  Queried and Analyzed Big Data with Millions of Rows using Databricks
 
 
 # Core Skills  
@@ -66,6 +73,6 @@ layout: about
 
 
 # Background & Misc.
-> My name is Yuta Akiya and I am 21 years old. I was born in Okazaki, Japan and moved to Southern California when I was 3 years old. During grade school, I played a total of 9 years of baseball including travel and high school level play. At 17, I graduated from Palm Desert High School and enrolled into Cal Poly Pomona as a computer engineering student. My interest in computer engineering came from my hobby of putting together desktop computers. I wanted to know more about how they allow us to do everyday things like surf the web, display things to our monitors, and run applications. I graduated from Cal Poly in May of 2021 and, since then, have been looking for entry-level or intern positions in a technical, data-related role. 
+> My name is Yuta Akiya and I am 21 years old. I was born in Okazaki, Japan and moved to Southern California when I was 3 years old. During grade school, I played a total of 9 years of baseball including travel and high school level play. At 17, I graduated from Palm Desert High School and started my undergrad at Cal Poly Pomona as a computer engineering student. My interest in computer engineering came from my hobby of putting together desktop computers. I wanted to know more about how they allow us to do everyday things like surf the web, display things to our monitors, and run applications. I graduated from Cal Poly in May of 2021 and, since then, have been looking for entry-level or intern positions in a technical, data-related role. 
 
 
