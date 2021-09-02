@@ -25,10 +25,10 @@ Python
 - pyodbc
 - selenium
 - requests
-- json
-GCP Cloud SQL Database
-SQL
-Tableau
+- json  
+GCP Cloud SQL Database  
+SQL  
+Tableau  
 
 
 # Procedure
