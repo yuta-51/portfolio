@@ -138,7 +138,7 @@ Let's refer back to our original goal: to find behavioral differneces between me
 Implementing each comparison as a table, chart, or graph in Tableau, our final dashbaord is complete. This dashboard aims to compare the differences between how members and non-members use the bike share service and how these differences can turn into insights to drive new marketing strategies for the company. 
 The final dashboard can be seen below as well as [here](https://public.tableau.com/views/BikeShare_16295803525410/Dashboard?:language=en-US&:display_count=n&:origin=viz_share_link) on my Tableau profile. 
  
-<img src="https://i.imgur.com/O7L9LT5.jpg" width=1000>
+<img src="https://i.imgur.com/60PfejJ.jpg" width=1000>
 
 
 ## 6. Insights
