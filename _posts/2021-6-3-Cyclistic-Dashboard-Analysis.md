@@ -147,8 +147,8 @@ The final dashboard can be seen below as well as [here](https://public.tableau.c
 3. Non-members tend to rent and return bikes on at the same station.
     - Notably, stations at "Streeter Dr & Grand Ave" and "Lake Shore Dr & Monroe Street" are the most popular among non-members.
 
-Based on these data-driven insights, the broad trend seems to be that there are more member rides because members tend to use Cyclistic to commute to work or school. However, when it comes to sight seeing or getting by on the weekend, there are more non-member riders. To convert the non-members to members, the company should insentivie using their bikes to commute to work/school. 
+Based on these data-driven insights, the broad trend seems to be that there are more member rides because members tend to use Cyclistic to commute to work or school. However, when it comes to sight seeing or traveling on the weekend for fun, there are more non-member riders. To convert the non-members to members, the company should insentivie using their bikes to commute to work/school and go to the popular non-member stations to advertise during the weekend to advertise membership deals/benefits. 
 
 ## 7. Strategy
 Based on the 3 main insights, we can come up with a broad marketing strategy outline.
-> Insentivize using Cyclistic to commute to school or work (student discount? partnerships?). During the weekend, advertise the bike-share service at the most popular stations for non-members. 
+> Insentivize using Cyclistic bikes to commute to school or work (student discount? partnerships?). During the weekend, advertise the bike-share service as well as benefits in becoming a member at "Streeter Dr & Grand Ave" and "Lake Shore Dr & Monroe Street", which are both extremely popular among non-members. 
