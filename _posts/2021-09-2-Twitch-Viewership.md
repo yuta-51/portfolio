@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Twitch Viewership Data Collection, Analysis and Viz"
-info: "Application that dynamically generates invoice documents."
+title:  "Twitch Viewership Data Project"
+info: "Data extraction, analysis, and visualization of livestream viewership data on Twitch.tv."
 tech: "Python, GCP Cloud SQL, Tableau"
 type: Project
 thumbnail: https://blog.twitch.tv/assets/uploads/sports-blog3-header-1306x700.jpg
