@@ -26,7 +26,9 @@ Python
 - pyodbc
 - selenium
 - requests
-- json  
+- json    
+
+
 GCP Cloud SQL Database  
 SQL  
 Tableau  
