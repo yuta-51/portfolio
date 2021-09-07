@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Twitch Viewership Data Project"
+title:  "Apex Legends Viewership on Twitch"
 info: "Data extraction, analysis, and visualization of livestream viewership data on Twitch.tv."
 tech: "Python, GCP Cloud SQL, Tableau"
 type: Project
