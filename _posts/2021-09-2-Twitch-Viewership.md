@@ -4,7 +4,7 @@ title:  "Twitch Viewership Data Project"
 info: "Data extraction, analysis, and visualization of livestream viewership data on Twitch.tv."
 tech: "Python, GCP Cloud SQL, Tableau"
 type: Project
-thumbnail: https://blog.twitch.tv/assets/uploads/sports-blog3-header-1306x700.jpg
+thumbnail: https://heavy.com/wp-content/uploads/2019/02/apex-legends-twitch-prime-pack.jpg?quality=65&strip=all
 ---
 
 # Background
