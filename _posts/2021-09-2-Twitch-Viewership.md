@@ -8,7 +8,7 @@ thumbnail: https://heavy.com/wp-content/uploads/2019/02/apex-legends-twitch-prim
 ---
 
 # Background
-Twitch.tv is a livestream platform focused mainly on video games. People livestream their gameplay and interact with their viewers through a chat system. In April 2021, Twitch had approximately 9.36 million active streamers, making it one the most popular livestremaing platform for gamers. It is extremely beneficial and common for video game creaters to partner with streamers and have them stream their game because it brings more peopel into their game, resulting in more revenue. 
+Twitch.tv is a livestream platform focused mainly on video games. People livestream their gameplay and interact with their viewers through a chat system. In April 2021, Twitch had approximately 9.36 million active streamers, making it one the most popular livestremaing platform for gamers. It is extremely beneficial and common for video game creaters to partner with streamers and have them stream their game because it brings more people into their game and also gives streamers the chance to grow their channel. 
 
 In this project, we will specifically be focusing on Apex Legends streams. Apex Legends is a popular battle-royale game on both PC and console. This game was chosen due to its rise in popularity as well as my personal liking for it. 
 
