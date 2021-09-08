@@ -156,7 +156,7 @@ Now we must implement a loading stage into this automated data extraction proces
 
 <img src="https://i.imgur.com/5MiJRc6.jpg" width=500>
 
-To load data into a remote database we need to establish a connection with it. For a Windows machine, the pyodbc library can be used along with a MySQL database connector. However, for a Linux machine, it is much easier to use a library called ```mysql-connector``` as it does not require a mysql connector to be installed seperately. This function creates a connection with our remote datbase using pyodbc. 
+To load data into a remote database we need to establish a connection to it. For a Windows machine, the pyodbc library can be used along with a MySQL database connector. However, for a Linux machine, it is much easier to use a library called ```mysql-connector``` as it does not require a mysql connector to be installed as a dependency. This function creates a connection with our remote datbase using pyodbc. 
 
 
 ```python
@@ -171,7 +171,9 @@ def get_connection() -> pyodbc.Connection:
         autocommit=True) 
 ```
  
-Now that we have the data and the connection to the database, we need to set up SQL statements to insert our data into the database. For our viewership data, as it only extracts one observation per interval (every 10 minutes), a simple ```INSERT INTO``` statement works. 
+ 
+Now that we have the data and the connection to the database, we need to set up SQL queries to insert our data into the database. For our viewership data, as it only extracts one observation per interval (every 10 minutes), a simple ```INSERT INTO``` statement works. 
+
 
 ```python
 def viewership_insertion_query(interval: int, viewers: int) -> str:
@@ -233,6 +235,8 @@ def generate_livestream_insertion_query(interval: int, top_streamers: list[dict]
 
     return query
 ```
+
+
 As the SQL query is a string, it can be appended to using a for loop. In every loop, an observation is addded to the insertion query. 
 We have all the parts for the data extraction and loading part at this point. Let's see how this script looks when we combine everything into a main function. 
 
@@ -275,8 +279,10 @@ Our main loop follows the following steps:
 4. Increment the row id (interval)
 5. Close connection and repeat
 
-This script is ran for a week to gather all the data we need for analysis. 
+
+This script runs continuously for a week to gather all the data we need for analysis. 
 
  
-## 5. Analyzing Data using Tableau
+## 5. Data Visualization using Tableau
+
 
