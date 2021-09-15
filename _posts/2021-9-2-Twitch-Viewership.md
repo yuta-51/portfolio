@@ -284,7 +284,7 @@ This script runs continuously for a week to gather all the data we need for anal
 
  
 ## 5. Data Visualization using Tableau  
-The raw dashboard can be seen [here](https://public.tableau.com/views/TwitchViewership_16315956963350/Dashboard?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link).
+The raw dashboard can be seen [here](https://public.tableau.com/views/TwitchViewership_16315956963350/Dashboard?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link). The main KPIs here are the highest concurrent viewership and average viewership of the toal of all Apex Legends livestreams on Twitch. The Graph on the bottom shows the viewership over time as well as the average viewership for that day. A clear trend can be seen where the viewership peaks on the weekend, falls during the middle of the week, then rises again on the weekend. 
 <img src="https://i.imgur.com/YX4Kg17.jpg" width=1000>
 
 
