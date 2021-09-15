@@ -283,9 +283,9 @@ Our main loop follows the following steps:
 This script runs continuously for a week to gather all the data we need for analysis. 
 
  
-## 5. Data Visualization using Tableau
-The raw dashboard can be seen (here)[https://public.tableau.com/views/TwitchViewership_16315956963350/Dashboard?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link].
-<img src="blob:https://imgur.com/f1974b11-e0f1-44c3-bf21-4ce3981a19ab" width=1000>
+## 5. Data Visualization using Tableau  
+The raw dashboard can be seen [here](https://public.tableau.com/views/TwitchViewership_16315956963350/Dashboard?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link).
+<img src="https://i.imgur.com/kdHRli4.jpg" width=1000>
 
 
 
