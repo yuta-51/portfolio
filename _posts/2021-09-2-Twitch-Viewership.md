@@ -285,7 +285,7 @@ This script runs continuously for a week to gather all the data we need for anal
  
 ## 5. Data Visualization using Tableau  
 The raw dashboard can be seen [here](https://public.tableau.com/views/TwitchViewership_16315956963350/Dashboard?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link).
-<img src="https://i.imgur.com/p93mdKx.jpg" width=1000>
+<img src="https://i.imgur.com/YX4Kg17.jpg" width=1000>
 
 
 
