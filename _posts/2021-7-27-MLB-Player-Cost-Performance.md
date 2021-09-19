@@ -18,7 +18,7 @@ Gather MLB player stats and salary data to create a dashboard showcasing salary-
 # Procedure
 ## 1. Data Extraction (Web Scraping)
 Our first step is to extract salary data from this [website](https://www.spotrac.com/mlb/rankings/salary/). 
-<img src = "https://i.imgur.com/c8hnox9.jpg" width = 500>
+<img src = "https://i.imgur.com/c8hnox9.jpg" width = 600>
 Because the table loads dynamically, we will not be able to scrape the entire table using the requests/bs4 libraries. We will instead use Selenium to scrape the table. The HTML structure of the website is standard. The table is represented as a ```table``` element with ```tr``` elements within it. Once we have the Selenium driver options setup, we can use this code chunk to find and scrape the salary table.
 
 ```python
@@ -43,7 +43,7 @@ with open('mlb_salaries.csv', 'w') as file:
 ## 2. Data Gathering (CSV)
 Next, we will get MLB hitting data from [baseball reference](https://www.baseball-reference.com/leagues/majors/2021-standard-batting.shtml). There is no need to scrape data from this site, as it conveniently offers a download-as-csv option.
 
-<img src="https://i.imgur.com/lcZOtU0.jpg" width=300>
+<img src="https://i.imgur.com/lcZOtU0.jpg" width= 600>
 
 
 ## 3. Data Cleaning
