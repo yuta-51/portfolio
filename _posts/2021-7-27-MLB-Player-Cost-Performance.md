@@ -130,8 +130,5 @@ stats_salaries.to_csv('mlb_hitter_salary.csv')
 
 
 ## 6. Dashboard  
-
-
-
-
+The raw dashboard can be seen [here](https://public.tableau.com/app/profile/yuta.akiya/viz/MLBHittersCostEffectiveness/Dashboard).
 <img src="https://i.imgur.com/HnsNDRb.png" width=1000>
