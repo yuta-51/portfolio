@@ -16,6 +16,14 @@ thumbnail: https://upload.wikimedia.org/wikipedia/en/thumb/a/a6/Major_League_Bas
 
 
 # Procedure
+1. Data Extraction
+
+
+2. Data Cleaning
+
+
+3. Dashboard
+
 
 
 
