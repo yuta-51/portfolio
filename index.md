@@ -2,15 +2,10 @@
 layout: about 
 ---
 
-# About Me
+
+# Summary
 ---
-
-### Summary
 > Hi! My name is Yuta and I'm a recent computer engineering graduate who is interested in pursuing a career in data. This is a personal website where I showcase my projects, accomplishments, and skills. Please use the navigation bar on the top right to see my projects, or go towards the bottom of this page to see my resume and contact information. Thank you for visiting!
-
-
-### Aspiration
-> During my four years pursuing an degree in computer engineering, I discovered my passion for programming and working with data. My final-year project about deep learning showed me how powerful data can be from a business prespective. This sparked my interest in pursuing a career in data. Currently, I am searching for an entry-level data analyst position to kick start my career. If you are interested in seeing my resume and/or contact information, please go towards the bottom of this page. 
 
 
 # Education
@@ -44,7 +39,6 @@ layout: about
 > APIs, Desktop Applications, EDA, ETL, OOP, Visualization, Web Scraping  
 
 
-
 ### SQL
 > Experience through various projects and coursework  
 > Experience querying big data via. Databricks & Spark SQL  
@@ -53,11 +47,11 @@ layout: about
 
 ### Spreadsheets
 > Data cleaning, Functions, Pivot Tables, VLOOKUP, Graphs  
-> Proficient in both Excel and Google Sheets  
+> Fluent in Excel and Google Sheets  
 
 
 ### Tableau
-> Experience through coursework and projects  
+> Experience through coursework and projects 
 > Interactive Dashboards  
 
 
@@ -70,6 +64,10 @@ layout: about
 ---
 > yutaakiya51(at)gmail(dot)com
 
+
+
+### Aspiration
+> During my four years pursuing an degree in computer engineering, I discovered my passion for programming and working with data. My final-year project about deep learning showed me how powerful data can be from a business prespective. This sparked my interest in pursuing a career in data. Currently, I am searching for an entry-level data analyst position to kick start my career. If you are interested in seeing my resume and/or contact information, please go towards the bottom of this page. 
 
 
 # Background & Misc.
