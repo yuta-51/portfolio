@@ -5,10 +5,10 @@ layout: about
 
 # Summary
 ---
-> Hi! My name is Yuta and I'm a recent computer engineering graduate who enjoys writing code and working with data. This is a personal website where I showcase my projects, accomplishments, and skills. Please use the navigation bar on the top right to see my projects or go towards the bottom of this page to see my resume and contact information. Thank you for visiting!
+> Hello! My name is Yuta and I'm a recent computer engineering graduate who enjoys writing code and working with data. This is a personal website where I showcase my projects, accomplishments, and skills. Please use the navigation bar on the top right to see my projects or go towards the bottom of this page to see my resume and contact information. Thank you for visiting!
 
 # Goal
-> During my four years pursuing an degree in computer engineering, I discovered my passion for writing code. After graduating, I knew for certain that I wanted to work in the software field. This website shows what projects I have worked on so far after graduating to improve my skillset. Currently, I am searching for an entry-level software engineering position to kick start my career.
+> I am looking for an entry-level software engineering position which mainly focuses on Python. 
 
 # Education
 ---
